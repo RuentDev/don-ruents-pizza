@@ -10,7 +10,7 @@ import InputImage from "./Input/InputImage";
 import SubmitButton from "./Buttons/Button";
 import Icon from "./Icon";
 import LinkButtonIcon from "./Buttons/LinkButtonIcon";
-import ProtectedPageProvider from "./ProtectedPageProvider";
+// import ProtectedPageProvider from "./ProtectedPageProvider";
 import LoginButton from "./Buttons/LoginButton";
 import InputText from "./Input/InputText";
 import UserRegisterForm from "./Forms/UserRegisterForm";
@@ -33,7 +33,7 @@ export {
     SubmitButton,
     Icon,
     LinkButtonIcon,
-    ProtectedPageProvider,
+    // ProtectedPageProvider,
     LoginButton,
     InputText,
     UserRegisterForm,
