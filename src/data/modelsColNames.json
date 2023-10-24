@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "label": "checkbox"
+    },
+    {
+        "id": 1,
+        "label": "image"
+    },
+    {
+        "id": 2,
+        "label": "model name"
+    },
+    {
+        "id": 3,
+        "label": "sku"
+    },
+    {
+        "id": 4,
+        "label": "model ID"
+    },
+    {
+        "id": 5,
+        "label": "category"
+    },
+    {
+        "id": 6,
+        "label": "color"
+    },
+    {
+        "id": 7,
+        "label": "size"
+    },
+    {
+        "id": 8,
+        "label": "price"
+    },
+    {
+        "id": 9,
+        "label": "showcase"
+    },
+    {
+        "id": 10,
+        "label": "date"
+    },
+    {
+        "id": 11,
+        "label": "actions"
+    }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "name": "onion rings",
+    "description": "Integer ultrice an aligula lectus purus magna and tempor",
+    "imagePath": "/images/featured/side-01.png",
+    "price": 150.00,
+    "ratings": 5.0
+  },
+  {
+    "id": 1,
+    "name": "frech fries",
+    "description": "Integer ultrice an aligula lectus purus magna and tempor",
+    "imagePath": "/images/featured/side-02.png",
+    "price": 150.00,
+    "ratings": 5.0
+  },
+  {
+    "id": 2,
+    "name": "mozzarella sticks",
+    "description": "Integer ultrice an aligula lectus purus magna and tempor",
+    "imagePath": "/images/featured/side-03.png",
+    "price": 150.00,
+    "ratings": 5.0
+  },
+  {
+    "id": 3,
+    "name": "chicken nuggets",
+    "description": "Integer ultrice an aligula lectus purus magna and tempor",
+    "imagePath": "/images/featured/side-04.png",
+    "price": 150.00,
+    "ratings": 5.0
+  }
+]

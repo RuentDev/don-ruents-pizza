@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "name": "all meat",
+        "description": "Lots and lots of meat and overloaded cheese",
+        "imagePath": "/images/pizza/all_meat.jpg",
+        "price": 250.00,
+        "ratings": 4.5,
+        "isLiked": false
+    },
+    {
+        "id": 1,
+        "name": "bacon cheese",
+        "description": "Plenty of delisious bacon with overloaded cheese",
+        "imagePath": "/images/pizza/bacon_cheese.jpg",
+        "price": 299.00,
+        "ratings": 5.0,
+        "isLiked": true
+    },
+    {
+        "id": 2,
+        "name": "classic cheese",
+        "description": "Taste of classic italian cheese pizza",
+        "imagePath": "/images/pizza/cheese.jpg",
+        "price": 399.00,
+        "ratings": 5.0,
+        "isLiked": false
+    },
+    {
+        "id": 3,
+        "name": "classic vegetarian",
+        "description": "Healty taste of vegetarian pizza, Tomato.",
+        "imagePath": "/images/pizza/classic_vege.jpg",
+        "price": 380.00,
+        "ratings": 5.0,
+        "isLiked": false
+    },
+    {
+        "id": 4,
+        "name": "ham & cheese",
+        "description": "Pizza sauce, cheese, cooked ham, ",
+        "imagePath": "/images/pizza/ham_cheese.jpg",
+        "price": 299.00,
+        "ratings": 5.0,
+        "isLiked": false
+    },
+    {
+        "id": 5,
+        "name": "hawaiian",
+        "description": "Pizza sauce, cheese, cooked ham, and pineapple",
+        "imagePath": "/images/pizza/hawaiian.jpg",
+        "price": 329.00,
+        "ratings": 5.0,
+        "isLiked": false
+    },
+    {
+        "id": 6,
+        "name": "peperoni",
+        "description": "characteristically soft, slightly smoky, and bright red. Sliced pepperoni ",
+        "imagePath": "/images/pizza/peperoni.jpg",
+        "price": 400.00,
+        "ratings": 5.0,
+        "isLiked": false
+    },
+    {
+        "id": 7,
+        "name": "pepper beef",
+        "description": "",
+        "imagePath": "/images/pizza/pepper_beef.jpg",
+        "price": 320.00,
+        "ratings": 5.0,
+        "isLiked": false
+    }
+]

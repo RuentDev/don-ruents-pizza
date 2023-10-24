@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "label": "Dashboard",
+        "icon": "house",
+        "link": "/",
+        "data": []
+    },
+    {
+        "id": 1,
+        "label": "Models",
+        "icon": "cube",
+        "link": "/models",
+        "data": [
+            {
+                "id": "sub-op-0",
+                "label": "Models List",
+                "icon": "list",
+                "link": "/models"
+            },
+            {
+                "id": "sub-op-1",
+                "label": "Add Model",
+                "icon": "circle-plus",
+                "link": "/models/editor"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "label": "Users",
+        "icon": "users",
+        "link": "/users",
+        "data": [
+            {
+                "id": "sub-op-0",
+                "label": "Users List",
+                "icon": "list",
+                "link": "/models"
+            },
+            {
+                "id": "sub-op-1",
+                "label": "Add Users",
+                "icon": "user-plus",
+                "link": "/users/#"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "label": "Statistics",
+        "icon": "chart-line",
+        "link": "/statistics",
+        "data": []
+    }
+]
