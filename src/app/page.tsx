@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import aboutdata from '../data/aboutData.json'
-import { ProductCard, ProductMenu1 } from './components'
-import menusData from './../data/menuData.json'
+import { Carousel1, ProductCard, ProductMenu1 } from './components'
 import FeaturedMenu from './components/Menus/FeaturedMenu'
 import { Lilita_One } from 'next/font/google'
-
+import menusData from './../data/menuData.json'
+import reviewData from '../data/testimonyData.json'
 
 const lilita = Lilita_One({
   subsets: ['latin'],
@@ -113,9 +113,9 @@ const page = async () => {
       <section className='featured-section w-full h-auto'>
         <FeaturedMenu />
       </section>
-      {/* BLOG SECTION */}
-      <section className='blog-section w-full h-auto'>
-
+      {/* TESTIMONY SECTION */}
+      <section className='testimony-section w-full h-auto'>
+        <Carousel1 slides={reviewData} />
       </section>
       {/* GALLERY */}
       <section className='gallery-section w-full h-auto'>

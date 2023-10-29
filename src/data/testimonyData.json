@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "User John",
+        "review": "Napaka sarap balik-balikan",
+        "ratings": 0.0,
+        "img": "/"
+    },
+    {
+        "id": 1,
+        "name": "User Michael",
+        "review": "Napaka laki nya at hindi natipid ang mga ingredients!",
+        "ratings": 0.0,
+        "img": "/"
+    },
+    {
+        "id": 2,
+        "name": "User Mark",
+        "review": "Napaka mura at masarap, sulit na sulit",
+        "ratings": 0.0,
+        "img": "/"
+    }
+]
