@@ -26,9 +26,9 @@ const Carousel1 = (props: Carousel1Props) => {
     startAutoPlay()
   
     return () => {
-      // stopAutoPlay()
+      stopAutoPlay()
     }
-  }, [])
+  })
 
 
   const startAutoPlay = () => {
