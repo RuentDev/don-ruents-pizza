@@ -1,12 +1,13 @@
-import { Footer, Navbar } from '@/app/components'
+
+import { Footer, Navbar } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Oswald } from 'next/font/google'
 import { ReduxProvider } from '@/redux/provider'
 import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev";
 import { __DEV__ } from '@apollo/client/utilities/globals'
-import { getServerSession } from 'next-auth'
-import FontAwesomeProvider from './components/FontAwesomeProvider'
+// import { getServerSession } from 'next-auth'
+import FontAwesomeProvider from '../components/FontAwesomeProvider'
 const oswald = Oswald({
   subsets: ['latin'],
   weight: '400',
@@ -16,8 +17,8 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'Delish Cheese Dough | Pizza',
-  description: 'A Better Pizza',
+  title: 'Don Ruents | Pizza',
+  description: 'Make it unforgettable',
 }
 
 
@@ -31,7 +32,8 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const session = await getServerSession()
+  // const session = await getServerSession()
+
   return (
     <html lang="en">
       <body className={oswald.className}>

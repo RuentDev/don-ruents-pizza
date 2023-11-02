@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Icon } from '..'
 import Link from 'next/link'
-import socialMedias from '../../../data/socialMedias.json'
+import socialMedias from '../../data/socialMedias.json'
 
 const Footer = () => {
 	return (
@@ -10,7 +10,7 @@ const Footer = () => {
 			<div className="inner-container w-full h-auto flex flex-col items-center justify-center">
 				{/* LOGO */}
 				<div className="logo-cotnainer my-5 w-[50%] h-auto flex items-center justify-center overflow-hidden">
-					<Image className='w-auto h-auto' src={'/logo.png'} width={50} height={50} alt='logo' priority={true} />
+					<Image className='w-auto h-auto' src={'/logo-1.png'} width={50} height={50} alt='logo' priority={true} />
 				</div>
 				{/* ICONS CONTAINER */}
 				<div className="icon-cotnainer mt-5">

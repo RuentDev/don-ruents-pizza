@@ -5,6 +5,7 @@
         "description": "Lots and lots of meat and overloaded cheese",
         "imagePath": "/images/pizza/all_meat.jpg",
         "price": 250.00,
+        "oldPrice": 0.0,
         "ratings": 4.5,
         "isLiked": false
     },
@@ -14,6 +15,7 @@
         "description": "Plenty of delisious bacon with overloaded cheese",
         "imagePath": "/images/pizza/bacon_cheese.jpg",
         "price": 299.00,
+        "oldPrice": 399.00,
         "ratings": 5.0,
         "isLiked": true
     },
@@ -23,6 +25,7 @@
         "description": "Taste of classic italian cheese pizza",
         "imagePath": "/images/pizza/cheese.jpg",
         "price": 399.00,
+        "oldPrice": 0.00,
         "ratings": 5.0,
         "isLiked": false
     },
@@ -32,6 +35,7 @@
         "description": "Healty taste of vegetarian pizza, Tomato.",
         "imagePath": "/images/pizza/classic_vege.jpg",
         "price": 380.00,
+        "oldPrice": 200.00,
         "ratings": 5.0,
         "isLiked": false
     },
@@ -41,6 +45,7 @@
         "description": "Pizza sauce, cheese, cooked ham, ",
         "imagePath": "/images/pizza/ham_cheese.jpg",
         "price": 299.00,
+        "oldPrice": 200.00,
         "ratings": 5.0,
         "isLiked": false
     },
@@ -50,6 +55,7 @@
         "description": "Pizza sauce, cheese, cooked ham, and pineapple",
         "imagePath": "/images/pizza/hawaiian.jpg",
         "price": 329.00,
+        "oldPrice": 200.00,
         "ratings": 5.0,
         "isLiked": false
     },
@@ -59,6 +65,7 @@
         "description": "characteristically soft, slightly smoky, and bright red. Sliced pepperoni ",
         "imagePath": "/images/pizza/peperoni.jpg",
         "price": 400.00,
+        "oldPrice": 200.00,
         "ratings": 5.0,
         "isLiked": false
     },
@@ -68,6 +75,7 @@
         "description": "",
         "imagePath": "/images/pizza/pepper_beef.jpg",
         "price": 320.00,
+        "oldPrice": 200.00,
         "ratings": 5.0,
         "isLiked": false
     }

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { HeadRoom } from '.'
 import Image from 'next/image'
-import sidebarOptions from '../../data/sidebarOptions.json'
+import sidebarOptions from '../data/sidebarOptions.json'
 import Icon from './Icon'
 const Sidebar = ({children}: {children: React.ReactNode}) => {
    return (

@@ -49,7 +49,7 @@ const Carousel1 = (props: Carousel1Props) => {
 
   return (
     <div className='carousel w-full h-auto p-10 overflow-hidden'>
-      <div className="slider w-full min-h-[50vh ] flex relative">
+      <div className="slider w-full min-h-[50vh] flex relative">
         {props.slides.map((slide) => (
           <React.Fragment key={slide.id}>
             <div className={`slide flex justify-center items-center flex-col absolute w-full h-full ${slide.id === currentSlide ? "opacity-100" : "opacity-0"} ease-in-out duration-[3000ms]`}>

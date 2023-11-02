@@ -1,23 +1,23 @@
 [
     {
         "id": 0,
-        "name": "User John",
-        "review": "Napaka sarap balik-balikan",
+        "name": "John",
+        "review": "Napaka sarap balik-balikan, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias et natus iusto impedit vero.",
         "ratings": 0.0,
-        "img": "/"
+        "img": "/images/other/review-author-no-image.jpg"
     },
     {
         "id": 1,
-        "name": "User Michael",
-        "review": "Napaka laki nya at hindi natipid ang mga ingredients!",
+        "name": "Michael",
+        "review": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis reiciendis distinctio quam repellat autem, pariatur quia rerum architecto fugiat aperiam.!",
         "ratings": 0.0,
-        "img": "/"
+        "img": "/images/other/review-author-no-image.jpg"
     },
     {
         "id": 2,
-        "name": "User Mark",
-        "review": "Napaka mura at masarap, sulit na sulit",
+        "name": " Mark",
+        "review": "Napaka mura at masarap, sulit na sulit, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias et natus iusto impedit vero.",
         "ratings": 0.0,
-        "img": "/"
+        "img": "/images/other/review-author-no-image.jpg"
     }
 ]

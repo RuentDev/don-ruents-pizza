@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "label": "cheese",
+    "link": "/"
+  },
+  {
+    "id": 1,
+    "label": "for kids",
+    "link": "/for-kids"
+  },
+  {
+    "id": 2,
+    "label": "light",
+    "link": "/light"
+  },
+  {
+    "id": 3,
+    "label": "piquant",
+    "link": "/piquant"
+  },
+  {
+    "id": 4,
+    "label": "savory",
+    "link": "/savory"
+  },
+  {
+    "id": 5,
+    "label": "sea food",
+    "link": "/sea-food"
+  },
+  {
+    "id": 6,
+    "label": "sweet",
+    "link": "/sweet"
+  },
+  {
+    "id": 7,
+    "label": "veggie",
+    "link": "/veggie"
+  }
+]

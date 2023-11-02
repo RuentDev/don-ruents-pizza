@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import FeaturedCard from '../Cards/FeaturedCard'
-import featuredProducts from '../../../data/featuredProductData.json'
+import featuredProducts from '../../data/featuredProductData.json'
 const FeaturedMenu = () => {
 
   const [products] = React.useState(featuredProducts)

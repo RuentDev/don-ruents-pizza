@@ -1,0 +1,27 @@
+[
+    {
+        "id": 0,
+        "label": "about",
+        "link": "/"
+    },
+    {
+        "id": 1,
+        "label": "menu",
+        "link": "menu"
+    },
+    {
+        "id": 2,
+        "label": "shop",
+        "link": "/shop"
+    },
+    {
+        "id": 3,
+        "label": "blog",
+        "link": "/"
+    },
+    {
+        "id": 4,
+        "label": "contact",
+        "link": "/"
+    }
+]

@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import menusData from '../../../data/menuData.json'
+import menusData from '../../data/menuData.json'
 import { ProductCard } from '..'
 const ProductMenu1 = () => {
 

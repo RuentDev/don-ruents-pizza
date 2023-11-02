@@ -46,9 +46,8 @@ const config: Config = {
         // => @media (min-width: 1536px) { ... }
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "logo": "url('logo-1.png')",
+        "reviewSectionImage": "url('/images/other/reviews-section-image.jpeg')"
       },
       letterSpacing: {
         '1': '0',
