@@ -7,45 +7,18 @@ import navMenus from '../../data/navMenuFronPage.json'
 import Link from 'next/link'
 import OrderNowButton from '../Buttons/OrderNowButton'
 import { usePathname } from 'next/navigation'
+import useNavigations from '@/hooks/components/useNavigations'
 
-type NavbarProps = {
-    navlink?: any
-}
 
-const Navbar = ({navlink}: NavbarProps) => {
-    const [showMenu, setShowMenu] = React.useState(false)
-    const [scrollPos, setScrollPos] = React.useState(0)
-    const [isTransparentBg, setIsTransparentBg] = React.useState(true)
-
-    const pathname = usePathname()
-
-    const handleButtonClick = () => {
-        setShowMenu(!showMenu)
-    }
-    const handleScroll = () => {
-        const position = window.pageYOffset;
-        setScrollPos(position);
-    };
-
-    React.useEffect(() => {
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-
-        setIsTransparentBg(prevState => {
-
-            if(pathname === "/" && scrollPos < 1){
-                prevState = true
-            }else{
-                prevState = false
-            }
-
-            return prevState
-        })
-        
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [scrollPos, navlink, pathname])
+const Navbar = () => {
+		const {
+			isTransparentBg,
+			showMenu,
+			handleOnClickCartButton,
+			handleHumbergerButtonClick,
+		} = useNavigations()
+   
+   
 
 
     return (
@@ -75,21 +48,21 @@ const Navbar = ({navlink}: NavbarProps) => {
                     {/* UL LIST */}
                     <ul className='hidden lg:flex items-center justify-center float-left'>
                         {navMenus.map((menu, index) => {
-                            return(
-															<li key={menu.id} className='mx-2 uppercase text-lg text-white'>
-																<Link href={menu.link} >{menu.label.toUpperCase()}</Link>
-															</li>
-                            )
+													return(
+														<li key={menu.id} className='mx-2 uppercase text-lg text-white'>
+															<Link href={menu.link} >{menu.label.toUpperCase()}</Link>
+														</li>
+													)
                         }).slice(4, 5)}
-                        <CartButton />
+                        <CartButton onClick={handleOnClickCartButton}/>
                         <OrderNowButton />
                     </ul>
                 </div>
                 {/*HAMBURGER BUTTON */}
-                <div onClick={handleButtonClick} className="p-1 cursor-pointer sm:block lg:hidden ">
-                    <span className={`ease-in-out duration-300 block h-[5px] w-[12.5px] rounded-full bg-white ${showMenu ? 'translate-x-[1px] translate-y-[1px] rotate-[45deg]' : 'my-1'}`}></span>
-                    <span className={`ease-in-out duration-300 block h-[5px] w-[25px] rounded-full bg-white ${showMenu ? 'rotate-[-45deg]' : 'my-1'}`}></span>
-                    <span className={`ease-in-out duration-300 block h-[5px] w-[12.5px] rounded-full bg-white translate-x-[10px] ${showMenu ? "translate-y-[-1px] rotate-[45deg]" : 'my-1'}`}></span>
+                <div onClick={handleHumbergerButtonClick} className="p-1 cursor-pointer sm:block lg:hidden ">
+									<span className={`ease-in-out duration-300 block h-[5px] w-[12.5px] rounded-full bg-white ${showMenu ? 'translate-x-[1px] translate-y-[1px] rotate-[45deg]' : 'my-1'}`}></span>
+									<span className={`ease-in-out duration-300 block h-[5px] w-[25px] rounded-full bg-white ${showMenu ? 'rotate-[-45deg]' : 'my-1'}`}></span>
+									<span className={`ease-in-out duration-300 block h-[5px] w-[12.5px] rounded-full bg-white translate-x-[10px] ${showMenu ? "translate-y-[-1px] rotate-[45deg]" : 'my-1'}`}></span>
                 </div>
             </div>
             {/* MOBILE HAMBURGER MENU */}

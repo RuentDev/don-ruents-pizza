@@ -1,5 +1,4 @@
 
-import { Footer, Navbar } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Oswald } from 'next/font/google'
@@ -8,12 +7,14 @@ import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev";
 import { __DEV__ } from '@apollo/client/utilities/globals'
 // import { getServerSession } from 'next-auth'
 import FontAwesomeProvider from '../components/FontAwesomeProvider'
+import { Footer, Navbar } from '@/components'
+
+
 const oswald = Oswald({
   subsets: ['latin'],
   weight: '400',
   preload: true,
   adjustFontFallback: true,
-
 })
 
 export const metadata: Metadata = {

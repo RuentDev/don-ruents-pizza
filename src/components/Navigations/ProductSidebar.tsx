@@ -5,12 +5,18 @@ import Link from 'next/link'
 import products from '../../data/menuData.json'
 import productCateries from '../../data/productCategories.json'
 import { RangeInput } from '..'
+import SearchInput from '../Input/SearchInput'
 
 const ProductSidebar = () => {
   return (
-    <div className="left-side-container w-[20%] h-full hidden lg:block">
+  <div className="left-side-container w-[20%] h-full hidden lg:block">
+    {/* SEARCH */}
+    <div className='search py-5 border-dashed border-b-2 border-colorSecondary'>
+      <h2 className='text-colorPrimary text-[1.2rem]'>SEARCH</h2>
+      <SearchInput />
+    </div>
     {/* PRODUCTS */}
-    <div className="products-container pb-5 border-dashed border-b-2 border-colorSecondary">
+    <div className="products-container py-5 border-dashed border-b-2 border-colorSecondary">
       <h2 className='text-colorPrimary text-[1.2rem]'>PRODUCTS</h2>
       <ul className="products-list">
         {products.map((product) => (
@@ -61,8 +67,9 @@ const ProductSidebar = () => {
       </ul>
     </div>
     <div className='filter my-5'>
-      <RangeInput filterBy='price' min={0} max={100} step={100}/>
+      <RangeInput filterBy='price' min={0} max={1000} step={100} defaultVal={[0, 75]}/>
     </div>
+    
   </div>
   )
 }
