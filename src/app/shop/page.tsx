@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductSidebar from '@/components/Navigations/ProductSidebar'
+import { ProductMenu1 } from '@/components'
 
 
 const ShopPage = () => {
@@ -9,8 +10,8 @@ const ShopPage = () => {
         {/* LEFT SIDE */}
         <ProductSidebar />
         {/* RIGHT SIDE */}
-        <div className="right-side-container border border-green-500 w-[80%] h-full">
-          right
+        <div className="right-side-container w-[80%] h-full px-5">
+          <ProductMenu1 />
         </div>
       </div>
     </div>

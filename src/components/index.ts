@@ -21,7 +21,7 @@ import ProductMenu1 from "./Menus/ProductMenu1";
 import Ratings from "./Ratings"
 import Carousel1 from "./Carousels/Carousel1";
 import ReactSlickSlider from "./Carousels/ReactSlickSlider";
-import FilterInput from "./Input/FilterInput";
+import RangeInput from "./Input/RangeInput";
 export {
     Sidebar,
     SearchBox,
@@ -46,5 +46,5 @@ export {
     Ratings,
     Carousel1,
     ReactSlickSlider,
-    FilterInput,
+    RangeInput,
 }

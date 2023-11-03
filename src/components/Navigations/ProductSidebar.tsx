@@ -4,13 +4,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import products from '../../data/menuData.json'
 import productCateries from '../../data/productCategories.json'
-import { FilterInput } from '..'
+import { RangeInput } from '..'
 
 const ProductSidebar = () => {
   return (
     <div className="left-side-container w-[20%] h-full hidden lg:block">
     {/* PRODUCTS */}
-    <div className="products-container pb-5 border-dashed border-b-2 border-gray-500">
+    <div className="products-container pb-5 border-dashed border-b-2 border-colorSecondary">
       <h2 className='text-colorPrimary text-[1.2rem]'>PRODUCTS</h2>
       <ul className="products-list">
         {products.map((product) => (
@@ -37,7 +37,7 @@ const ProductSidebar = () => {
       </ul>
     </div>
     {/* PRODUCT CATEGORIES */}
-    <div className="product-catergories py-5 border-dashed border-b-2 border-gray-500">
+    <div className="product-catergories py-5 border-dashed border-b-2 border-colorSecondary">
       <h2 className='text-colorPrimary text-[1.2rem]'>PRODUCT CATEGORIES</h2>
       <ul className="product-categories-list flex flex-col gap-1 overflow-hidden">
         {productCateries.map((category) => (
@@ -61,7 +61,7 @@ const ProductSidebar = () => {
       </ul>
     </div>
     <div className='filter my-5'>
-      <FilterInput />
+      <RangeInput filterBy='price' min={0} max={100} step={100}/>
     </div>
   </div>
   )
