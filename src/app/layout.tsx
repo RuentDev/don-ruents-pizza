@@ -42,7 +42,7 @@ export default async function RootLayout({
         <FontAwesomeProvider>
           <ReduxProvider>
             <Navbar />
-            {children}
+              {children}
             <Footer />
           </ReduxProvider>
         </FontAwesomeProvider>

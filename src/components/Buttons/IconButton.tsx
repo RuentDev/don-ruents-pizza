@@ -21,7 +21,7 @@ interface IconButtonProps {
 const IconButton = ({ className, iconName, size, flip, color, onClick }: IconButtonProps) => {
 
   return (
-    <div className={`flex items-center justify-center${className}`} onClick={onClick}>
+    <div className={`flex items-center justify-center ${className}`} onClick={onClick}>
       <Icon iconName={iconName} size={size} flip={flip} color={color} />
     </div>
   );
