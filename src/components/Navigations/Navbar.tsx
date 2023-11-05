@@ -3,11 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import IconButton from '../Buttons/IconButton'
 import CartButton from '../Buttons/CartButton'
-import navMenus from '../../data/navMenuFronPage.json'
 import Link from 'next/link'
 import OrderNowButton from '../Buttons/OrderNowButton'
-import { usePathname } from 'next/navigation'
 import useNavigations from '@/hooks/components/useNavigations'
+import navMenus from '../../data/navMenuFronPage.json'
 
 
 const Navbar = () => {
@@ -23,7 +22,7 @@ const Navbar = () => {
 
     return (
         <nav className={`fixed h-auto w-full z-50 ${!isTransparentBg ? "bg-colorPrimary" : "bg-transparent"}`}>
-            <div className={`outer-container w-full h-[100px] flex items-center justify-between overflow-hidden px-5 my-2`}>
+            <div className={`outer-container w-full h-[70px] md:h-[100px] flex items-center justify-between overflow-hidden px-5 my-2`}>
                 {/* CALL BUTTON */}
                 <IconButton className='block lg:hidden' iconName="fa-phone" size={20} color='white' flip />
                 <div className="inner-container w-[20%] md:w-[10%] lg:w-[100%] h-auto">
@@ -31,15 +30,15 @@ const Navbar = () => {
                     <ul className='hidden lg:flex items-center justify-center float-right'>
                         {navMenus.map((menu, index) => {
                             return(
-                                <li key={menu.id} className='mx-2 uppercase text-lg text-white'>
-                                    <Link href={menu.link}>{menu.label.toUpperCase()}</Link>
-                                </li>
+															<li key={menu.id} className='mx-2 uppercase text-lg text-white'>
+																<Link href={menu.link}>{menu.label.toUpperCase()}</Link>
+															</li>
                             )
                         }).slice(0, 4)}
                     </ul>
                 </div>
                 {/* LOGO */}
-                <div className="logo-cotnainer w-[60%] md:w-[40%] lg:w-[60%] h-[100%]">
+                <div className="logo-cotnainer w-[80%] md:w-[40%] lg:w-[60%] h-full">
                     <Link className='w-full h-full flex justify-center overflow-hidden' href="/">
                         <Image className='w-auto h-auto' src={'/logo-1.png'} width={100} height={100} alt='logo' priority={true} />
                     </Link>
@@ -47,7 +46,7 @@ const Navbar = () => {
                 <div className="inner-container w-[20%] md:w-[10%] lg:w-[100%] h-auto">
                     {/* UL LIST */}
                     <ul className='hidden lg:flex items-center justify-center float-left'>
-                        {navMenus.map((menu, index) => {
+                        {navMenus.map((menu) => {
 													return(
 														<li key={menu.id} className='mx-2 uppercase text-lg text-white'>
 															<Link href={menu.link} >{menu.label.toUpperCase()}</Link>
@@ -66,15 +65,16 @@ const Navbar = () => {
                 </div>
             </div>
             {/* MOBILE HAMBURGER MENU */}
-            <div className={`h-auto w-full lg:hidden bg-white overflow-hidden`}>
-                <ul className={`ease-in-out duration-300 overflow-hidden flex flex-col justify-evenly ${showMenu ? "h-[350px]" : "h-0"}`}>
-                    <li className='text-primaryTextColor mx-2 my-3 uppercase text-xl font-bold'>About</li>
-                    <li className='text-primaryTextColor mx-2 my-3 uppercase text-xl font-bold'>Menu</li>
-                    <li className='text-primaryTextColor mx-2 my-3 uppercase text-xl font-bold'>Mega Menu</li>
-                    <li className='text-primaryTextColor mx-2 my-3 uppercase text-xl font-bold'>Shop</li>
-                    <li className='text-primaryTextColor mx-2 my-3 uppercase text-xl font-bold'>Blog</li>
-                    <li className='text-primaryTextColor mx-2 my-3 uppercase text-xl font-bold'>Contact</li>
-                </ul>
+            <div className={`w-full ${showMenu ? "h-[350px]" : "h-0"} ease-in-out duration-300 lg:hidden bg-white overflow-hidden `}>
+							<ul className={`overflow-hidden flex flex-col justify-evenly h-auto`}>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>About</li>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>Menu</li>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>Mega Menu</li>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>Shop</li>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>Blog</li>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>Cart</li>
+								<li className='text-primaryTextColor uppercase text-md font-bold px-5 py-3 '>Contact</li>
+							</ul>
             </div>
         </nav>
     )

@@ -31,15 +31,15 @@ const Footer = () => {
 				{/* PAGE TITLE CONTAINER */}
 				<div className="page-title-container w-full f-auto flex items-center justify-evenly">
 					<ul className='w-[70%] sm:w-[90%] lg:w-[50%] h-auto grid grid-cols-3 sm:grid-cols-6 my-5'>
-						<li className='uppercase text-center text-white text-center px-1 md:border-r-2'>about</li>
-						<li className='uppercase text-center text-white text-center px-1 md:border-r-2'>menu</li>
-						<li className='uppercase text-center text-white text-center px-1 md:border-r-2'>order now</li>
-						<li className='uppercase text-center text-white text-center px-1 md:border-r-2'>gallery</li>
-						<li className='uppercase text-center text-white text-center px-1 md:border-r-2'>gift cards</li>
-						<li className='uppercase text-center text-white text-center px-1'>contact</li>
+						<li className='uppercase text-white text-center px-1 md:border-r-2'>about</li>
+						<li className='uppercase text-white text-center px-1 md:border-r-2'>menu</li>
+						<li className='uppercase text-white text-center px-1 md:border-r-2'>order now</li>
+						<li className='uppercase text-white text-center px-1 md:border-r-2'>gallery</li>
+						<li className='uppercase text-white text-center px-1 md:border-r-2'>gift cards</li>
+						<li className='uppercase text-white text-center px-1'>contact</li>
 					</ul>
 				</div>
-				<p className='font-[15px] my-10 text-white'>© 2023 DelishCheese. All Rights Reserved</p>
+				<p className='font-[15px] my-10 text-white'>© 2023 DonRuent&apos;sPizza. All Rights Reserved</p>
 			</div>
 		</footer>
 	)

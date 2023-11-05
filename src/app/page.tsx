@@ -127,7 +127,7 @@ const page = async () => {
               {locations.map((location) => (
                 <div 
                   key={location.id}
-                  className='w-full h-auto flex flex-col justify-center items-center text-center'
+                  className='w-full h-auto flex flex-col justify-center items-center text-center my-3'
                 >
                   <div className="image-container  w-full h-[25rem] md:h-[15rem] lg:h-[25rem] relative overflow-hidden rounded-md">
                     <Image 
@@ -139,8 +139,8 @@ const page = async () => {
                       priority
                     />
                   </div>
-                  <h3 className='text-[2rem] mt-5 text-colorPrimary'>{location.name.toUpperCase()}</h3>
-                  <p className='text-[1.2rem]'>Phone: {location.phone}</p>
+                  <h3 className='text-[2rem] mt-5 text-colorPrimary uppercase'>{location.name}</h3>
+                  <p className='text-[1.2rem]'>{location.phone}</p>
                   <h4 className='text-[1.5rem]'>ADDRESS</h4>
                   <p className=' max-w-[300px] text-gray-500'>{location.address}</p>
                 </div>

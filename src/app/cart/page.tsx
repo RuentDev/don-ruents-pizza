@@ -1,83 +1,33 @@
-import IconButton from '@/components/Buttons/IconButton'
+import CartList from '@/components/List/CartList'
 import React from 'react'
 
 const CartPage = () => {
   return (
-    <div className='h-screen w-full pt-[150px] px-10'>
+    <div className='h-auto w-full pb-20'>
       <div className="outer-container h-auto w-full">
         <div className="inner-container h-auto w-full">
-          {/* CART TABLE */}
-          <div className="cart-table h-auto w-[60%] mx-auto">
-            <ul className="col-name h-auto w-full flex gap-2 border-b">
-              <li className='text-[1.5rem] w-[50%] p-3'>Product</li>
-              <li className='text-center text-[1.5rem] w-[12.5%] p-3'>Price</li>
-              <li className='text-center text-[1.5rem] w-[12.5%] p-3'>Quantity</li>
-              <li className='text-center text-[1.5rem] w-[12.5%] p-3'>Total</li>
-              <li className='text-center text-[1.5rem] w-[12.5%] p-3'>Delete</li>
-            </ul>
-            <ul className="cart-list w-full h-auto flex flex-col items-center justify-center">
-              <li className='w-full h-auto py-5 flex gap-2 border-b'>
-                {/* IMAGE & NAME */}
-                <div className="image-details-container w-[50%] m-auto px-3 flex">
-                  {/* IMAGE */}
-                  <div className="image-container">
-                    {/* <Image /> */}
-                  </div>
-                  {/* DETAILS */}
-                  <div className="details-container">
-                    <h3 className='text-colorPrimary'>Product Name</h3>
-                    <p className='text-secondaryTextColor'>Description</p>
-                  </div>
+          {/* BANNER */}
+          <div className="cart-banner w-full h-[50vh] md:h-[60vh] xl:h-[40vh] bg-banner1 bg-cover bg-center bg-no-repeat">
+            <div className="overlay relative w-full h-full bg-overlay-5">
+              {/* CENTER CONTENT */}
+              <div className="center-content h-auto sm:w-[92%] md:w-[95%] lg:w-[70%] absolute left-1/2 transform -translate-x-1/2 -bottom-[35%] bg-white p-5 hidden md:flex drop-shadow-md">
+                {/* LEFT */}
+                <div className="image-contaianer w-full">
+                  IMAGE
                 </div>
-                {/* PRICE */}
-                <div className="price-container w-[12.5%] h-auto m-auto px-3">
-                  <p className='text-center text-colorPrimary txt'>₱100.00</p>
+                {/* RIGHT */}
+                <div className="banner-content w-full">
+                  <h3 className='text-[2rem] text-colorPrimary'>FREE DELIVERY</h3>
+                  <p className='my-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod beatae est ab veniam eligendi. Sequi, consequuntur fugiat. Maxime, excepturi alias.</p>
                 </div>
-                {/* QUANTITY */}
-                <div className="quantity-container w-[12.5%] h-auto m-auto px-3">
-                  <p className='text-center text-colorPrimary'>1</p>
-                </div>
-                {/* TOTAL */}
-                <div className="total-container w-[12.5%] h-auto m-auto px-3">
-                  <p className='text-center text-colorPrimary'>₱100.00</p>
-                </div>
-                {/* DELETE */}
-                <div className="delete-container w-[12.5%] h-auto m-auto">
-                  <IconButton className='cursor-pointer' color='red' iconName='fa-solid fa-trash' size={25} />
-                </div>
-              </li>
-              <li className='w-full h-auto py-5 flex gap-2 border-b'>
-                {/* IMAGE & NAME */}
-                <div className="image-details-container w-[50%] m-auto px-3 flex">
-                  {/* IMAGE */}
-                  <div className="image-container">
-                    {/* <Image /> */}
-                  </div>
-                  {/* DETAILS */}
-                  <div className="details-container">
-                    <h3 className='text-colorPrimary'>Product Name</h3>
-                    <p className='text-secondaryTextColor'>Description</p>
-                  </div>
-                </div>
-                {/* PRICE */}
-                <div className="price-container w-[12.5%] h-auto m-auto px-3">
-                  <p className='text-center text-colorPrimary txt'>₱100.00</p>
-                </div>
-                {/* QUANTITY */}
-                <div className="quantity-container w-[12.5%] h-auto m-auto px-3">
-                  <p className='text-center text-colorPrimary'>1</p>
-                </div>
-                {/* TOTAL */}
-                <div className="total-container w-[12.5%] h-auto m-auto px-3">
-                  <p className='text-center text-colorPrimary'>₱100.00</p>
-                </div>
-                {/* DELETE */}
-                <div className="delete-container w-[12.5%] h-auto m-auto">
-                  <IconButton className='cursor-pointer' color='red' iconName='fa-solid fa-trash' size={25} />
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
+          {/* CART TABLE */}
+          <div className="cart-table h-auto md:mt-[150px] mx-auto p-5">
+            <CartList />
+          </div>
+          {/* BOTTOM CONTENT */}
           <div className="bottom-container">
             {/* LEFT SIDE */}
             <div className="left-side-container">

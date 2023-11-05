@@ -47,7 +47,8 @@ const config: Config = {
       },
       backgroundImage: {
         "logo": "url('logo-1.png')",
-        "reviewSectionImage": "url('/images/other/reviews-section-image.jpeg')"
+        "reviewSectionImage": "url('/images/other/reviews-section-image.jpeg')",
+        "banner1": "url('/images/banners/category-1.jpg')"
       },
       letterSpacing: {
         '1': '0',
