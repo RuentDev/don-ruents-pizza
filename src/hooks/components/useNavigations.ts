@@ -29,8 +29,7 @@ const useNavigations = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     setIsTransparentBg(prevState => {
-      // pathname === "/" &&
-        if( scrollPos < 100){
+        if( scrollPos < 100 && pathname === "/"){
             prevState = true
         }else{
             prevState = false

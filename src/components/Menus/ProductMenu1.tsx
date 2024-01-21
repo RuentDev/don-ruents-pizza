@@ -19,7 +19,7 @@ const ProductMenu1 = () => {
 
 
 	return (
-		<div className='product-list-1 w-full h-auto grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 select-none'>
+		<div className='product-list-1 w-full h-auto grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 select-none'>
 			{data.map((menu: { id: number, name: string, description: string, imagePath: string, price: number, ratings: number, isLiked: boolean }) => {
 				return (
 					<React.Fragment key={`menu-${menu.id}`}>
