@@ -5,7 +5,6 @@ import { Oswald } from 'next/font/google'
 import { ReduxProvider } from '@/redux/provider'
 import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev";
 import { __DEV__ } from '@apollo/client/utilities/globals'
-// import { getServerSession } from 'next-auth'
 import FontAwesomeProvider from '../components/FontAwesomeProvider'
 import { Footer, Navbar } from '@/components'
 
@@ -33,12 +32,10 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // const session = await getServerSession()
 
   return (
     <html lang="en">
       <body className={oswald.className}>
-        {/* <SessionProvider session={session}> */}
         <FontAwesomeProvider>
           <ReduxProvider>
             <Navbar />
@@ -46,7 +43,6 @@ export default async function RootLayout({
             <Footer />
           </ReduxProvider>
         </FontAwesomeProvider>
-        {/* </SessionProvider> */}
       </body>
     </html>
   )

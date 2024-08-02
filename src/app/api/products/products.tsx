@@ -1,6 +1,6 @@
 import client from "@/utils/shopify";
 
-export default async function products() {
+export default async function getAllProducts() {
   const productQuery = `{
     products (first: 10) {
       nodes {
