@@ -1,7 +1,34 @@
+'use client'
 import CartList from '@/components/List/CartList'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { getCartItems } from '../api/cart/query'
 
 const CartPage = () => {
+
+  const [cartItems, setCartItems] = useState([])
+
+  useEffect(() => {
+    async function getCartData() {
+      const localCartData = localStorage.getItem("donruentpizza:shopify:cart")
+
+      if (localCartData) {
+        const cartData = JSON.parse(localCartData)
+
+        const cart = await getCartItems(cartData.id)
+
+        console.log(cart)
+        setCartItems(cart?.lines?.edges)
+
+
+      }
+    }
+
+    getCartData()
+
+
+  }, [])
+
+
   return (
     <div className='h-auto w-full pb-20'>
       <div className="outer-container h-auto w-full">
@@ -25,7 +52,7 @@ const CartPage = () => {
           </div>
           {/* CART TABLE */}
           <div className="cart-table h-auto md:mt-[150px] mx-auto p-5">
-            <CartList />
+            <CartList cartItems={cartItems} />
           </div>
           {/* BOTTOM CONTENT */}
           <div className="bottom-container">

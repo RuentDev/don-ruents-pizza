@@ -3,36 +3,23 @@ import React, { ReactElement } from 'react'
 import { FontAwesomeIcon, IconName } from '@fortawesome/react-fontawesome'
 import { Icon } from '..'
 type TextIconButtonProps = {
-    text: string,
-    icon: string,
-    solid?: boolean,
-    style?: object,
-    color?: string,
-    size?: number,
-    disabledHover?: boolean
-    onClick?: () => void,
-  }
+  text: string,
+  icon: string,
+  size?: "sm" | "md" | "lg" | "xl"
+  color?: "colorPrimary" | "colorSecondary" | "colorDark" | "white"
+  bg?: "colorPrimary" | "colorSecondary" | "colorDark"
+  iconSpace: number,
+  onClick?: () => void,
+}
 
-const TextIconButton = (props: TextIconButtonProps): ReactElement => {
+const TextIconButton: React.FC<TextIconButtonProps> = (props): ReactElement => {
   return (
     <button
-        style={{
-            ...props.style
-        }}
-        onClick={props.onClick}
-        className={`
-          ${props.solid ? null: 'border-solid border border-colorSecondary'} 
-          ${props.solid ? 'bg-colorPrimary': null}
-          ${props.solid ? 'hover:bg-colorDark' : 'hover:bg-colorSecondary'}
-          ${props.solid ? 'text-white' : 'text-colorSecondary hover:text-white'}
-          h-11 min-w-20 max-w-full
-          flex items-center justify-center gap-2 
-          m-1 py-3 px-5 rounded-full  
-          transition ease-in-out duration-300 font-bold text-md`
-        }
+      className={`bg-${props.bg} text-${props.color} min-w-[100px] min-h-[40px] flex items-center justify-center gap-${props.iconSpace} rounded-md px-5`}
+      onClick={props.onClick}
     >
+      {props.icon && <Icon iconName={props.icon} size={20} />}
       {props.text}
-      {props.icon ? <Icon iconName={props.icon} size={20} /> : null}
     </button>
   )
 }

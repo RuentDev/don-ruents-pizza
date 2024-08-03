@@ -1,28 +1,23 @@
 "use client"
 import React from 'react'
-interface TextButtonProps{
-    text: string
-    size?: "sm" | "md" | "lg" | "xl"
-    data?: any[]
-    color?: "colorPrimary" | "colorSecondary" | "colorDark"
-    weight?: "thin" | "normal" | "semibold" | "bold" | "extrabold" | "black"
-    active?: boolean
-    onClick?: () => void
+interface TextButtonProps {
+  text: string
+  size?: "sm" | "md" | "lg" | "xl"
+  color?: "colorPrimary" | "colorSecondary" | "colorDark" | "white"
+  bg?: "colorPrimary" | "colorSecondary" | "colorDark"
+  weight?: "thin" | "normal" | "semibold" | "bold" | "extrabold" | "black"
+  active?: boolean
+  onClick?: () => void
 }
 
-const TextButton = (props: TextButtonProps) => {
+const TextButton: React.FC<TextButtonProps> = ({ text, color, bg, onClick }) => {
 
   return (
     <button
-        className={`
-            ${props.size ? `text-${props.size}` : null }
-            ${props.color ? props.active ? 'text-colorSecondary' : null : null }
-            ${props.weight ? `font-${props.weight}` : null }
-            mx-1
-        `}
+      onClick={onClick}
+      className={` text-button bg-${bg} text-${color} min-w-[100px] min-h-[40px] rounded-md`}
     >
-      {props.text}
-      ({props.data && props.data.length})
+      {text}
     </button>
   )
 }

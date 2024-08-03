@@ -17,7 +17,7 @@ import UserRegisterForm from "./Forms/UserRegisterForm";
 import Navbar from "./Navigations/Navbar";
 import Footer from "./Footer/Footer";
 import ProductCard from "./Cards/ProductCard";
-import ProductMenu1 from "./Menus/ProductMenu1";
+import ProductMenu1 from "./Menus/ProductMenu";
 import Ratings from "./Ratings"
 import Carousel1 from "./Carousels/Carousel1";
 import ReactSlickSlider from "./Carousels/ReactSlickSlider";

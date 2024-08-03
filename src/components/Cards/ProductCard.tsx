@@ -9,13 +9,14 @@ type ProductCardProps = {
   name: string,
   description: string,
   imagePath: string,
-  price: number,
-  ratings: number,
-  isLiked: boolean,
-  onClick: () => void
+  price?: string,
+  ratings?: number,
+  isLiked?: boolean,
+  onClick?: () => void
+  onAddToCart?: () => void
 }
 
-const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, onClick }: ProductCardProps) => {
+const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, onClick, onAddToCart }: ProductCardProps) => {
 
   const [onFocus, setOnFocus] = React.useState(false)
 
@@ -25,8 +26,8 @@ const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, on
       <div className="inner-container block w-full h-[20rem] sm:h-[15rem] relative overflow-hidden rounded-tl-lg rounded-tr-lg">
         <Image
           src={imagePath}
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           alt={name}
           priority
           className={`w-auto h-auto absolute object-cover object-center duration-300 ${onFocus ? "scale-[2] rotate-90" : ""}`}
@@ -35,24 +36,38 @@ const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, on
       {/* Ratings and Likes */}
       <div className="ratings-likes-container w-full h-auto p-5 flex items-center justify-between">
         {/* Ratings */}
-        <Ratings className='rating-sm lg:rating-md' disabled={true} />
+        <Ratings
+          disabled={true}
+          className='rating-md lg:rating-md'
+          size={20}
+        />
         {/* Likes */}
-        <IconButton className={`bg-red-200 text-colorPrimary`} iconName={isLiked ? "fas-regular fa-heart" : "fa-regular fa-heart"} size={25} onClick={onClick} />
+        <IconButton
+          size={25}
+          onClick={onClick}
+          className={`text-colorPrimary`}
+          iconName={isLiked ? "fas-regular fa-heart" : "fa-regular fa-heart"}
+        />
       </div>
       <div className="details-container p-5">
         {/* Name */}
         <h3 className='text-colorPrimary h-[2rem] text-[1.5rem] sm:text-[1.2rem] uppercase'>{name}</h3>
         {/* Description */}
-        <p className='text-secondaryTextColor h-[3rem] my-1'>{description}</p>
+        <p className='text-secondaryTextColor h-[3rem] my-1'>{description.substring(0, 100)}</p>
         {/* Price */}
         <div className='text-primaryTextColor w-full py-5 rounded-lg flex items-center justify-between'>
           {/* Price */}
-          <h3>₱{price.toFixed(2)}</h3>
+          <h3>{price}</h3>
           {/* AddToCartBTN */}
-          <button className={`btn font-[100] md:btn-md md:px-2 flex items-center justify-center bg-colorPrimary text-white border-0 ease-in-out duration-500`}>
-            <Icon iconName="fa-solid fa-bag-shopping" size={20} color='primaryTextColor' />
-            Add to cart
-          </button>
+          <TextIconButton
+            size="md"
+            text="Add to cart"
+            icon="fa-solid fa-bag-shopping"
+            bg='colorPrimary'
+            color='white'
+            iconSpace={1}
+            onClick={onAddToCart}
+          />
         </div>
       </div>
     </div>

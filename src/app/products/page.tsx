@@ -1,5 +1,5 @@
 import React from 'react'
-import getAllProducts from '../api/products/products'
+import getAllProducts from '../api/products/query'
 
 const ProductsPage = async () => {
 
