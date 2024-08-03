@@ -1,7 +1,7 @@
 import client from "@/utils/shopify";
 
 export async function createCart() {
-  const productMutation = `
+  const cartQuery = `
     mutation CreateCart{
       cartCreate {
         cart {
@@ -17,7 +17,7 @@ export async function createCart() {
   `;
 
 
-  const { data, errors } = await client.request(productMutation);
+  const { data, errors } = await client.request(cartQuery);
 
   if (errors) {
     return errors
@@ -27,10 +27,8 @@ export async function createCart() {
 
 }
 
-
-
 export async function addItemToCart(cartId: string, merchandiseId: string, quantity: number) {
-  const productMutation = `
+  const cartQuery = `
     mutation cartLinesAdd($cartId: ID!, $lines: [CartLineInput!]!) {
       cartLinesAdd(cartId: $cartId, lines: $lines) {
         cart {
@@ -46,7 +44,7 @@ export async function addItemToCart(cartId: string, merchandiseId: string, quant
   `;
 
 
-  const { data, errors } = await client.request(productMutation, {
+  const { data, errors } = await client.request(cartQuery, {
     variables: {
       cartId,
       lines: [
@@ -62,6 +60,35 @@ export async function addItemToCart(cartId: string, merchandiseId: string, quant
     return errors
   }
 
-  console.log(data)
-  return
+  return data
+}
+
+export async function removeItemToCart(cartId: string, lineIds: string[]) {
+  const cartQuery = `
+    mutation cartLinesRemove($cartId: ID!, $lineIds: [ID!]!) {
+      cartLinesRemove(cartId: $cartId, lineIds: $lineIds) {
+        cart {
+          id
+          checkoutUrl
+        }
+        userErrors {
+          field
+          message
+        }
+      }
+    }
+ `
+
+ const { data, errors } = await client.request(cartQuery, {
+    variables: {
+      cartId,
+      lineIds: lineIds,
+    }
+  });
+
+  if (errors) {
+    return errors
+  }
+
+  return data
 }

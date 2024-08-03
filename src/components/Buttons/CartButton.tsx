@@ -4,11 +4,11 @@ import Image from 'next/image'
 import { createCart } from '@/app/api/cart/mutation'
 import { getCartItems } from '@/app/api/cart/query'
 
-type CartButtonProps = {
+interface CartButtonProps {
   onClick?: () => void
 }
 
-const CartButton = ({ onClick }: CartButtonProps) => {
+const CartButton: React.FC<CartButtonProps> = ({ onClick }) => {
 
   const [cartItems, setCartItems] = useState(0)
 

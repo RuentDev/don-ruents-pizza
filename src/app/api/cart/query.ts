@@ -14,6 +14,7 @@ export async function getCartItems(id: string) {
         lines(first: 100) {
           edges {
             node {
+              id
               quantity
               estimatedCost {
                 subtotalAmount {

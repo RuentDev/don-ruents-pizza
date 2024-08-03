@@ -57,7 +57,7 @@ export async function getAllProducts(): Promise<Product[]> {
   return data.products.nodes
 }
 
-export async function getProductByCollectionHandle(handle: string) {
+export async function getProductsByCollectionHandle(handle: string) {
 
   const productQuery = `
     query Collection($handle: String) {

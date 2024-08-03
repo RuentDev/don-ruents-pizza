@@ -6,7 +6,7 @@ import FeaturedMenu from '../components/Menus/FeaturedMenu'
 import { Lilita_One } from 'next/font/google'
 import locations from './../data/locations.json'
 import reviewData from '../data/testimonyData.json'
-import { getAllProducts, getProductByCollectionHandle } from './api/products/query'
+import { getAllProducts, getProductsByCollectionHandle } from './api/products/query'
 
 const lilita = Lilita_One({
   subsets: ['latin'],
@@ -18,7 +18,7 @@ const lilita = Lilita_One({
 const HomePage = async () => {
 
   const products = await getAllProducts()
-  const featuredProducts = await getProductByCollectionHandle('featured')
+  const featuredProducts = await getProductsByCollectionHandle('featured')
 
   return (
     <main className='h-auto w-full'>
