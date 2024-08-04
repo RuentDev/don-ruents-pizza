@@ -12,7 +12,7 @@ const SearchInput = () => {
             type="text" 
             placeholder='Search products...'
           />
-          <Icon iconName='fa-magnifying-glass' size={20} color='black' />
+          <Icon iconName='magnifying-glass' size={20} color='black' />
         </div>
       </div>
     </div>

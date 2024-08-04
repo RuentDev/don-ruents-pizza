@@ -2,8 +2,6 @@ import { setRSModelCategory, setRSModelClientName, setRSModelDescription, setRSM
 import { ChangeEvent, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "@/redux/store"
-import { client } from "@/apolloClient"
-import { INSERT_MODEL } from "@/graphql/queries"
 const useInfoEditor = () => {
     const [imageFrontPreviewURL, setFrontImagePriviewURL] = useState<any>()
     const [imageBackPreviewURL, setBackImagePriviewURL] = useState<any>()
@@ -111,20 +109,6 @@ const useInfoEditor = () => {
     }
 
     const handlePublishModel = (e: any) => {
-        
-        client.query({
-            query: INSERT_MODEL,
-            variables: {    
-                sku: modelData.sku,
-                name: modelData.name,
-                path: "",
-                showcase: modelData,
-                category: modelData.category,
-                color: "",
-                rprice: modelData.rPrice,
-                sPrice: modelData.sPrice,
-            }
-        })
     }
 
     return{

@@ -3,6 +3,7 @@ import React from 'react'
 import { Icon } from '..'
 import Link from 'next/link'
 import socialMedias from '../../data/socialMedias.json'
+import { IconName } from '@fortawesome/fontawesome-svg-core'
 
 const Footer = () => {
 	return (
@@ -20,7 +21,7 @@ const Footer = () => {
 								return (
 									<li key={social.id}>
 										<Link href={`${social.link}`}>
-											<Icon iconName={social.icon} size={30} color='white' />
+											<Icon iconName={{prefix: "fab", iconName: social.label as IconName}} size={30} color='white' />
 										</Link>
 									</li>
 								)

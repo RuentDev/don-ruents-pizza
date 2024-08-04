@@ -1,7 +1,6 @@
 "use client"
-import React from 'react'
-import RangeSlider from 'react-range-slider-input'
 import 'react-range-slider-input/dist/style.css';
+import React from 'react'
 
 
 type FilterInputProps = {
@@ -39,13 +38,13 @@ const RangeInput = ({filterBy, min, max, defaultVal, step}: FilterInputProps) =>
     <div className='range-input w-full h-auto'>
       <h4 className='text-colorSecondary my-5'>FILTER BY {filterBy.toUpperCase()}</h4>
       <div className="range-contaier relative w-full h-auto my-5">
-        <RangeSlider 
+        {/* <RangeSlider 
           id="react-range-slider" 
           onInput={handleOnInput}
           min={min}
           max={max}
           defaultValue={[currentMinPrice, currentMaxPrice]}
-        />
+        /> */}
       </div>
       <div className="details-container flex gap-2">
         <p className='text-colorSecondary'>MIN: <span className='text-colorPrimary'>₱{currentMinPrice}</span></p>

@@ -1,18 +1,26 @@
 "use client"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+
 
 interface IconProps {
-    iconName: string
+    iconName: IconProp
     size: number
     color?: string
     flip?: boolean
 }
 
-const Icon = (props: IconProps) => {
+const Icon: React.FC<IconProps> = ({color, iconName, size, flip}) => {
     return (
-        <FontAwesomeIcon color={`${props.color}`} icon={props.iconName} width={props.size} height={props.size} className={`w-auto h-auto ${props.flip ? 'rotate-[260deg]' : ''}`} />
+        <FontAwesomeIcon 
+            color={color} 
+            icon={iconName}
+            width={size} 
+            height={size} 
+            className={`w-auto h-auto ${flip ? 'rotate-[260deg]' : ''}`} 
+        />
     )
 }
-
+export type { IconProp }
 export default Icon

@@ -1,12 +1,13 @@
 
+import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React from 'react'
-import { Icon } from '..'
+import Icon, { IconProp } from "../Icon"
 
 interface LinkButtonIconProps{
     href: string
     label: string
-    iconName: string
+    iconName: IconProp;
     color?: string
     textColor?: string
     hoverColor?: string

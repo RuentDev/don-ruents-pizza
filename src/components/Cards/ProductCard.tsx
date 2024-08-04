@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import IconButton from '../Buttons/IconButton'
-import { Icon, Ratings, TextIconButton } from '..'
+import { Ratings, TextIconButton } from '..'
 
 type ProductCardProps = {
   name: string,
@@ -46,7 +46,7 @@ const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, on
           size={25}
           onClick={onClick}
           className={`text-colorPrimary`}
-          iconName={isLiked ? "fas-regular fa-heart" : "fa-regular fa-heart"}
+          iconName={isLiked ? {prefix: "fas", iconName: "heart"} : {prefix: "far", iconName: "heart"}}
         />
       </div>
       <div className="details-container p-5">
@@ -62,7 +62,7 @@ const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, on
           <TextIconButton
             size="md"
             text="Add to cart"
-            icon="fa-solid fa-bag-shopping"
+            iconName="bag-shopping"
             bg='colorPrimary'
             color='white'
             iconSpace={1}

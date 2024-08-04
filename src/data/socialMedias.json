@@ -3,24 +3,21 @@
     "id": 0,
     "label": "facebook",
     "link": "https://www.facebook.com",
-    "icon": "fa-brands fa-facebook"
-  },
-  {
-    "id": 1,
-    "label": "x",
-    "link": "https://www.x.com",
-    "icon": "fa-brands fa-twitter"
+    "icon": {"prefix": "fab", "iconName": "facebook"}
   },
   {
     "id": 2,
     "label": "instagram",
     "link": "https://www.instagram.com",
-    "icon": "fa-brands fa-instagram"
+    "icon": {"prefix": "fab", "iconName": "instagram"}
   },
   {
     "id": 3,
     "label": "youtube",
     "link": "https://www.youtube.com",
-    "icon": "fa-brands fa-youtube"
+    "icon": {
+      "prefix": "fab", 
+      "iconName": "youtube"
+    }
   }
 ]

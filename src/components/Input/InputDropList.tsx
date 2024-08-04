@@ -15,7 +15,6 @@ const InputDropList = (props: InputDropList) => {
       <label htmlFor={props.id} className='text-xs font-extrabold my-2 text-gray-400'>{props.label}</label>
       <select
         id={props.id} 
-        placeholder={props.placeholder} 
         onChange={props.onChange} 
         defaultValue={props.defaultValue}
         className='p-2 text-gray-600 border border-gray-300 rounded-md focus:border-gray-300 focus:ring-0'

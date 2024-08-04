@@ -24,7 +24,7 @@ const Navbar = () => {
 		<nav className={`fixed h-auto w-full z-50 ${!isTransparentBg ? "bg-colorPrimary" : "bg-transparent"}`}>
 			<div className={`outer-container w-full h-[70px] md:h-[100px] flex items-center justify-between overflow-hidden px-5 my-2`}>
 				{/* CALL BUTTON */}
-				<IconButton className='block lg:hidden' iconName="fa-phone" size={20} color='white' flip />
+				<IconButton className='block lg:hidden' iconName="phone" size={20} color='white' flip />
 				<div className="inner-container w-[20%] md:w-[10%] lg:w-[100%] h-auto">
 					{/* UL LIST */}
 					<ul className='hidden lg:flex items-center justify-center float-right'>
@@ -52,7 +52,7 @@ const Navbar = () => {
 									<Link href={menu.link} >{menu.label.toUpperCase()}</Link>
 								</li>
 							)
-						}).slice(4, 5)}
+						}).slice(4, 6)}
 						<CartButton onClick={handleOnClickCartButton} />
 						<OrderNowButton />
 					</ul>

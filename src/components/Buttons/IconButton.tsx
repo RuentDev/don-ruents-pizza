@@ -1,8 +1,8 @@
-import { Icon } from "..";
+import Icon, { IconProp } from "../Icon";
 
 interface IconButtonProps {
   className: string;
-  iconName: string;
+  iconName: IconProp;
   size: number;
   flip?: boolean;
   color?: string

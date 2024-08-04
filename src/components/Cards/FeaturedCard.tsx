@@ -29,7 +29,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ image, title, description, 
               size={25}
               onClick={onClick}
               className={`text-colorPrimary absolute top-1 right-1`}
-              iconName={isLiked ? "fas-regular fa-heart" : "fa-regular fa-heart"}
+              iconName={isLiked ? {prefix: "fas", iconName: "heart"} : {prefix: "far", iconName: "heart"}}
             />
             <div className="image-inner-container w-full h-[15rem] p-6 overflow-hidden">
               <Image className='w-auto h-auto' src={image} width={500} height={500} alt={title} />
@@ -56,7 +56,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ image, title, description, 
           color="white"
           text="Add to cart"
           bg="colorSecondary"
-          icon="fa-solid fa-bag-shopping"
+          iconName="bag-shopping"
         />
       </div>
     </div>

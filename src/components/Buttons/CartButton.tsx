@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { createCart } from '@/app/api/cart/mutation'
 import { getCartItems } from '@/app/api/cart/query'
@@ -8,7 +8,7 @@ interface CartButtonProps {
   onClick?: () => void
 }
 
-const CartButton: React.FC<CartButtonProps> = ({ onClick }) => {
+const CartButton:FC<CartButtonProps> = ({onClick}) => {
 
   const [cartItems, setCartItems] = useState(0)
 
@@ -36,7 +36,7 @@ const CartButton: React.FC<CartButtonProps> = ({ onClick }) => {
   }, [])
 
 
-  return (
+   return (
     <div title='Cart' className="mx-5 bg-transparent flex items-center justify-center cursor-pointer relative" onClick={onClick}>
       <span className="cart-count absolute -top-5 -left-1 text-colorPrimary bg-colorSecondary rounded-full px-1">{cartItems ? cartItems : 0}</span>
       <div className="icon-container w-[30px] h-[30px] overflow-hidden">
@@ -44,6 +44,6 @@ const CartButton: React.FC<CartButtonProps> = ({ onClick }) => {
       </div>
     </div>
   )
-}
+};
 
-export default CartButton
+export default CartButton;

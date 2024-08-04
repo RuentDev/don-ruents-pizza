@@ -1,13 +1,8 @@
 [
     {
         "id": 0,
-        "label": "about",
+        "label": "home",
         "link": "/"
-    },
-    {
-        "id": 1,
-        "label": "menu",
-        "link": "menu"
     },
     {
         "id": 2,
@@ -15,13 +10,23 @@
         "link": "/shop"
     },
     {
+        "id": 1,
+        "label": "menu",
+        "link": "menu"
+    },
+    {
         "id": 3,
-        "label": "blog",
-        "link": "/"
+        "label": "blogs",
+        "link": "/blogs"
     },
     {
         "id": 4,
+        "label": "News",
+        "link": "/news"
+    },
+    {
+        "id": 5,
         "label": "contact",
-        "link": "/"
+        "link": "/contact"
     }
 ]

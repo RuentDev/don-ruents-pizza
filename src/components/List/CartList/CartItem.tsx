@@ -1,7 +1,6 @@
 "use client"
-import Buttons from '@/components/Buttons'
-import { Product } from '@/utils/types'
-import React, { useState } from 'react'
+import IconButton from '@/components/Buttons/IconButton';
+import React from 'react'
 
 interface CartItemProps{
   item: {
@@ -59,10 +58,10 @@ const CartItem: React.FC<CartItemProps> = ({item, active, onClick, onDeleteClick
 			</div>
 			{/* DELETE */}
 			<div className="delete-container h-full w-[70px] absolute right-0">
-				<Buttons.IconButton
+				<IconButton
 					size={25} 
 					color='white' 
-					iconName='fa-solid fa-trash' 
+					iconName="trash" 
 					onClick={onDeleteClick}
 					className='cursor-pointer bg-red-700 h-full w-full' 
 				/>

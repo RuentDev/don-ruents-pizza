@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	reactStrictMode: false,
-	images: { unoptimized: true },
+  reactStrictMode: false,
 	env: {
 		SHOPIFY_STORE_DOMAIN: process.env.SHOPIFY_STORE_DOMAIN,
 		SHOPIFY_STOREFRONT_ACCESS_TOKEN: process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN,
@@ -19,4 +18,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+export default nextConfig;
