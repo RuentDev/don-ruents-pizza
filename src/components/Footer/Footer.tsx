@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import { Icon } from '..'
 import Link from 'next/link'
 import socialMedias from '../../data/socialMedias.json'
 import { IconName } from '@fortawesome/fontawesome-svg-core'
+import Icon from '../Icon'
 
 const Footer = () => {
 	return (

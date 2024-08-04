@@ -4,9 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import products from '../../data/menuData.json'
 import productCateries from '../../data/productCategories.json'
-import { RangeInput } from '..'
 import SearchInput from '../Input/SearchInput'
 import { Product } from '@/utils/types'
+import RangeInput from '../Input/RangeInput'
 
 
 interface ProductSidebarProps{

@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import { Icon } from '..'
 import Image from 'next/image'
 
 type CarouselDataTypes = {

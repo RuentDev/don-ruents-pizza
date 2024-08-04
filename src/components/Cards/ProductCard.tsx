@@ -2,8 +2,8 @@
 
 import React from 'react'
 import Image from 'next/image'
-import IconButton from '../Buttons/IconButton'
-import { Ratings, TextIconButton } from '..'
+import Ratings from '../Ratings'
+import Buttons from "../Buttons"
 
 type ProductCardProps = {
   name: string,
@@ -16,7 +16,7 @@ type ProductCardProps = {
   onAddToCart?: () => void
 }
 
-const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, onClick, onAddToCart }: ProductCardProps) => {
+const ProductCard: React.FC<ProductCardProps> = ({ imagePath, name, description, price, ratings, isLiked, onClick, onAddToCart }) => {
 
   const [onFocus, setOnFocus] = React.useState(false)
 
@@ -42,7 +42,7 @@ const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, on
           size={20}
         />
         {/* Likes */}
-        <IconButton
+        <Buttons.IconButton
           size={25}
           onClick={onClick}
           className={`text-colorPrimary`}
@@ -59,7 +59,7 @@ const ProductCard = ({ imagePath, name, description, price, ratings, isLiked, on
           {/* Price */}
           <h3>{price}</h3>
           {/* AddToCartBTN */}
-          <TextIconButton
+          <Buttons.TextIconButton
             size="md"
             text="Add to cart"
             iconName="bag-shopping"

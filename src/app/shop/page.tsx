@@ -1,11 +1,12 @@
 import React from 'react'
 import ProductSidebar from '@/components/Navigations/ProductSidebar'
-import { ProductMenu1 } from '@/components'
-import { getProductsByCollectionHandle } from '../api/products/query'
+import Components from '@/components'
+import { getProductsByCollectionHandle, getAllProducts } from '../api/products/query'
 
 
 const ShopPage = async () => {
 
+  const allProducts = await getAllProducts()
   const hotProducts = await getProductsByCollectionHandle("hot-products")
 
   return (
@@ -17,7 +18,7 @@ const ShopPage = async () => {
         />
         {/* RIGHT SIDE */}
         <div className="right-side-container md:w-full lg:w-[80%] h-full px-5">
-          <ProductMenu1 />
+          <Components.ProductMenu1 />
         </div>
       </div>
     </div>

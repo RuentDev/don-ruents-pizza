@@ -1,6 +1,6 @@
 "use client"
-import { Icon } from ".."
 import React from 'react'
+import Icon from '../Icon'
 
 
 

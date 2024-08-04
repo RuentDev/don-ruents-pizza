@@ -1,6 +1,6 @@
 "use client"
 import { addItemToCart } from '@/app/api/cart/mutation'
-import { ProductCard } from '..'
+import Cards from "../Cards"
 import { Product } from '@/utils/types'
 import React from 'react'
 
@@ -36,7 +36,7 @@ const ProductMenu: React.FC<ProductMenyProps> = ({ products }) => {
 			{data.map((product) => {
 				return (
 					<React.Fragment key={product.id}>
-						<ProductCard
+						<Cards.ProductCard
 							name={product.title}
 							price={product.priceRange.minVariantPrice.amount}
 							// isLiked={product.isLiked}

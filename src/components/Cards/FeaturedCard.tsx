@@ -2,7 +2,8 @@
 import Image from 'next/image'
 import React from 'react'
 import IconButton from '../Buttons/IconButton'
-import { Ratings, TextIconButton } from '..'
+import Buttons from '../Buttons'
+import Ratings from '../Ratings'
 
 
 interface FeaturedCardProps {
@@ -50,7 +51,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ image, title, description, 
           <p className='text-secondaryTextColor text-center'>{description}</p>
         </div>
         {/* Button */}
-        <TextIconButton
+        <Buttons.TextIconButton
           size="md"
           iconSpace={1}
           color="white"

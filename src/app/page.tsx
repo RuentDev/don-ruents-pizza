@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import aboutdata from '../data/aboutData.json'
-import { ProductMenu1, ReactSlickSlider, TextButton } from '../components'
+import Components from '@/components'
 import FeaturedMenu from '../components/Menus/FeaturedMenu'
 import { Lilita_One } from 'next/font/google'
 import locations from './../data/locations.json'
 import reviewData from '../data/testimonyData.json'
 import { getAllProducts, getProductsByCollectionHandle } from './api/products/query'
+import Icon from '@/components/Icon'
 
 const lilita = Lilita_One({
   subsets: ['latin'],
@@ -62,7 +63,7 @@ const HomePage = async () => {
             <h2 className='text-primaryTextColor text-[2rem] md:text-[2rem] lg:text-[3rem] font-[500] lg:font-[700] -tracking-2'>NOTHING BRINGS PEOPLE TOGETHER LIKE A GOOD PIZZA</h2>
             <p className='text-secondaryTextColor font-extralight '>Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae at integer orci congue and metus in mollislorem primis gravida</p>
             <div className='button-container w-full h-auto mt-10'>
-              <TextButton
+              <Components.TextButton
                 text='Order Now'
                 bg="colorPrimary"
                 color="white"
@@ -76,7 +77,7 @@ const HomePage = async () => {
       <section id='#menu' className='menu-section h-auto w-full flex flex-col items-center px-10'>
         <h2 style={lilita.style} className='text-[3rem] text-colorPrimary text-center mt-5 mb-2'>Our Original Recipe</h2>
         <p className='text-secondaryTextColor text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis animi dignissimos reiciendis eveniet neque laboriosam tenetur?</p>
-        <ProductMenu1 products={products} />
+        <Components.ProductMenu1 products={products} />
       </section>
       {/* BANNER */}
       <section className='h-auto w-full p-10'>
@@ -122,7 +123,7 @@ const HomePage = async () => {
       <section className='testimony-section w-full h-auto'>
         <h2 style={lilita.style} className="text-[3rem] text-colorPrimary text-center mt-5 mb-2">What other people say?</h2>
         {/* <Carousel1 slides={reviewData} /> */}
-        <ReactSlickSlider slides={reviewData} />
+        <Components.ReactSlickSlider slides={reviewData} />
       </section>
       {/* LOCATION SECTION */}
       <section className='gallery-section w-full h-auto p-5 lg:p-10'>
@@ -146,7 +147,7 @@ const HomePage = async () => {
                   />
                 </div>
                 <h3 className='text-[2rem] mt-5 text-colorPrimary uppercase'>{location.name}</h3>
-                <p className='text-[1.2rem]'>{location.phone}</p>
+                <p className='text-[1.2rem]'><Icon iconName={{prefix: "fas", iconName: "phone"}} size={17}/> {location.phone}</p>
                 <h4 className='text-[1.5rem]'>ADDRESS</h4>
                 <p className=' max-w-[300px] text-gray-500'>{location.address}</p>
               </div>

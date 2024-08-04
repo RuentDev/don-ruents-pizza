@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Oswald } from 'next/font/google'
 import { ReduxProvider } from '@/redux/provider'
 import FontAwesomeProvider from '../components/FontAwesomeProvider'
-import { Footer, Navbar } from '@/components'
+import Components from '@/components'
 
 
 const oswald = Oswald({
@@ -30,9 +30,9 @@ export default async function RootLayout({
       <body className={oswald.className}>
         <FontAwesomeProvider>
           <ReduxProvider>
-            <Navbar />
+            <Components.Navbar />
             {children}
-            <Footer />
+            <Components.Footer />
           </ReduxProvider>
         </FontAwesomeProvider>
       </body>

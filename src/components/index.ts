@@ -17,10 +17,7 @@ import Carousel1 from "./Carousels/Carousel1";
 import ReactSlickSlider from "./Carousels/ReactSlickSlider";
 import RangeInput from "./Input/RangeInput";
 
-
-
-
-export {
+const components = {
     Sidebar,
     SearchBox,
     DropdownList,
@@ -40,3 +37,5 @@ export {
     ReactSlickSlider,
     RangeInput,
 }
+
+export default components

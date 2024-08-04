@@ -1,7 +1,7 @@
 "use client"
 import React, { ReactElement } from 'react'
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
-import { Icon } from '..'
+import Icon from '../Icon'
 type TextIconButtonProps = {
   text: string,
   iconName: FontAwesomeIconProps["icon"];
