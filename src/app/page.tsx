@@ -77,7 +77,7 @@ const HomePage = async () => {
       <section id='#menu' className='menu-section h-auto w-full flex flex-col items-center px-10'>
         <h2 style={lilita.style} className='text-[3rem] text-colorPrimary text-center mt-5 mb-2'>Our Original Recipe</h2>
         <p className='text-secondaryTextColor text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis animi dignissimos reiciendis eveniet neque laboriosam tenetur?</p>
-        <Components.ProductMenu1 products={products} />
+        <Components.ProductMenu products={products} />
       </section>
       {/* BANNER */}
       <section className='h-auto w-full p-10'>
