@@ -63,11 +63,11 @@ const HomePage = async () => {
             <h2 className='text-primaryTextColor text-[2rem] md:text-[2rem] lg:text-[3rem] font-[500] lg:font-[700] -tracking-2'>NOTHING BRINGS PEOPLE TOGETHER LIKE A GOOD PIZZA</h2>
             <p className='text-secondaryTextColor font-extralight '>Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae at integer orci congue and metus in mollislorem primis gravida</p>
             <div className='button-container w-full h-auto mt-10'>
-              <Components.TextButton
-                text='Order Now'
-                bg="colorPrimary"
-                color="white"
-                size='md'
+              <Components.Buttons.OrderNowButton 
+                bg="colorPrimary" 
+                bgHover="white" 
+                textColor="white" 
+                textHoverColor="colorSecondary" 
               />
             </div>
           </div>

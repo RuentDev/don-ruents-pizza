@@ -16,8 +16,11 @@ import Ratings from "./Ratings"
 import Carousel1 from "./Carousels/Carousel1";
 import ReactSlickSlider from "./Carousels/ReactSlickSlider";
 import RangeInput from "./Input/RangeInput";
+import Buttons from './Buttons'
+
 
 const components = {
+    Buttons,
     Sidebar,
     SearchBox,
     DropdownList,

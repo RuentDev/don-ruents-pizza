@@ -64,7 +64,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ imagePath, name, description,
             text="Add to cart"
             iconName="bag-shopping"
             bg='colorPrimary'
-            color='white'
             iconSpace={1}
             onClick={onAddToCart}
           />

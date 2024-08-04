@@ -54,7 +54,6 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ image, title, description, 
         <Buttons.TextIconButton
           size="md"
           iconSpace={1}
-          color="white"
           text="Add to cart"
           bg="colorSecondary"
           iconName="bag-shopping"

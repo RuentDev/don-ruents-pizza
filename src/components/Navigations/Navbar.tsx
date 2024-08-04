@@ -1,13 +1,10 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import IconButton from '../Buttons/IconButton'
-import CartButton from '../Buttons/CartButton'
 import Link from 'next/link'
-import OrderNowButton from '../Buttons/OrderNowButton'
 import useNavigations from '@/hooks/components/useNavigations'
 import navMenus from '../../data/navMenuFronPage.json'
-
+import Buttons from '../Buttons'
 
 const Navbar = () => {
 	const {
@@ -24,7 +21,7 @@ const Navbar = () => {
 		<nav className={`fixed h-auto w-full z-50 ${!isTransparentBg ? "bg-colorPrimary" : "bg-transparent"}`}>
 			<div className={`outer-container w-full h-[70px] md:h-[100px] flex items-center justify-between overflow-hidden px-5 my-2`}>
 				{/* CALL BUTTON */}
-				<IconButton className='block lg:hidden' iconName="phone" size={20} color='white' flip />
+				<Buttons.IconButton className='block lg:hidden' iconName="phone" size={20} color='white' flip />
 				<div className="inner-container w-[20%] md:w-[10%] lg:w-[100%] h-auto">
 					{/* UL LIST */}
 					<ul className='hidden lg:flex items-center justify-center float-right'>
@@ -53,8 +50,13 @@ const Navbar = () => {
 								</li>
 							)
 						}).slice(4, 6)}
-						<CartButton onClick={handleOnClickCartButton} />
-						<OrderNowButton />
+						<Buttons.CartButton onClick={handleOnClickCartButton} />
+						<Buttons.OrderNowButton 
+							bg="colorSecondary" 
+							bgHover="white" 
+							textColor="primaryTextColor" 
+							textHoverColor="white" 
+						/>
 					</ul>
 				</div>
 				{/*HAMBURGER BUTTON */}
