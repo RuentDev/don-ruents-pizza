@@ -31,6 +31,9 @@ export async function getCartItems(id: string) {
                   title
                   product {
                     title
+                    featuredImage {
+                      url
+                    }
                   }
                   priceV2 {
                     amount

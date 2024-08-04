@@ -44,6 +44,7 @@ const CartList: React.FC<CartListProps> = ({ cartItems }) => {
 
 
 	 useEffect(() => {
+		console.log(cartItems)
     setCartData(cartItems)
   }, [cartItems])
 

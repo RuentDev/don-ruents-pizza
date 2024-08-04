@@ -18,7 +18,7 @@ const ShopPage = async () => {
         />
         {/* RIGHT SIDE */}
         <div className="right-side-container md:w-full lg:w-[80%] h-full px-5">
-          <Components.ProductMenu1 />
+          <Components.ProductMenu products={allProducts} />
         </div>
       </div>
     </div>

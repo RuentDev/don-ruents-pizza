@@ -4,7 +4,7 @@ import type { Product } from '@/utils/types';
 
 export async function getAllProducts(): Promise<Product[]> {
   const productQuery = `{
-    products (first: 10) {
+    products (first: 8) {
       nodes {
         id
         handle
