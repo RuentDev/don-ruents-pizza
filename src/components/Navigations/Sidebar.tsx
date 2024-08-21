@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import sidebarOptions from '../../data/sidebarOptions.json'
-import Icon from '../UI/Icon'
+import sidebarOptions from '@/data/sidebarOptions.json'
+
 const Sidebar = ({children}: {children: React.ReactNode}) => {
    return (
       <div className='h-screen w-full flex'>

@@ -1,6 +1,6 @@
 import DropdownList from "./UI/List/DropdownList";
 import TextIconButton from "./UI/Buttons/TextIconButton";
-import Sidebar from "./Navigations/Sidebar";
+import Navigations from "./Navigations";
 import SearchBox from "./UI/Input/SearchBox";
 import TextButton from "./UI/Buttons/TextButton";
 import InputImage from "./UI/Input/InputImage";
@@ -22,7 +22,7 @@ import Sections from "./Sections";
 const components = {
     Buttons,
     Sections,
-    Sidebar,
+    Navigations,
     SearchBox,
     DropdownList,
     TextIconButton,

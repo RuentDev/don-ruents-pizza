@@ -1,19 +1,18 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import products from '../../data/menuData.json'
-import productCateries from '../../data/productCategories.json'
-import SearchInput from '../UI/Input/SearchInput'
+import Image from 'next/image'
 import { Product } from '@/libs/types'
 import RangeInput from '../UI/Input/RangeInput'
+import SearchInput from '../UI/Input/SearchInput'
+import productCateries from '@/data/productCategories.json'
 
 
 interface ProductSidebarProps{
-  hotProducts: Product[]
+  products: Product[]
 }
 
-const ProductSidebar: React.FC<ProductSidebarProps> = ({hotProducts}) => {
+const ProductSidebar: React.FC<ProductSidebarProps> = ({products}) => {
   return (
   <div className="left-side-container w-[20%] h-full hidden lg:block">
     {/* SEARCH */}
@@ -25,7 +24,7 @@ const ProductSidebar: React.FC<ProductSidebarProps> = ({hotProducts}) => {
     <div className="products-container py-5 border-dashed border-b-2 border-colorSecondary">
       <h2 className='text-colorPrimary text-[1.2rem]'>HOT PRODUCTS</h2>
       <ul className="products-list">
-        {hotProducts?.map((product) => (
+        {products?.map((product) => (
           <li key={product.id} className='product mt-2 flex gap-3'>
             <div className="img-container h-[50px] w-[50px] overflow-hidden rounded-full">
               <Link href={`/products/${product.title}`}>
