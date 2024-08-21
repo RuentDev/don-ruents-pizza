@@ -1,5 +1,5 @@
 'use client'
-import CartList from '@/components/List/CartList/CartList'
+import CartList from '@/components/UI/List/CartList/CartList'
 import React, { useEffect, useState } from 'react'
 import { getCartItems } from '../api/cart/query'
 

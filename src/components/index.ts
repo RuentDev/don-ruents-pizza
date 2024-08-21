@@ -1,30 +1,30 @@
-import DropdownList from "./DropdownList";
-import TextIconButton from "./Buttons/TextIconButton";
-import Sidebar from "./Sidebar";
-import SearchBox from "./SearchBox";
-import PageName from "./PageName";
-import TextButton from "./Buttons/TextButton";
-import InputImage from "./Input/InputImage";
-import Icon from "./Icon";
-import LinkButtonIcon from "./Buttons/LinkButtonIcon";
-import InputText from "./Input/InputText";
+import DropdownList from "./UI/List/DropdownList";
+import TextIconButton from "./UI/Buttons/TextIconButton";
+import Sidebar from "./Navigations/Sidebar";
+import SearchBox from "./UI/Input/SearchBox";
+import TextButton from "./UI/Buttons/TextButton";
+import InputImage from "./UI/Input/InputImage";
+import Icon from "./UI/Icon";
+import LinkButtonIcon from "./UI/Buttons/LinkButtonIcon";
+import InputText from "./UI/Input/InputText";
 import Navbar from "./Navigations/Navbar";
 import Footer from "./Footer/Footer";
-import ProductCard from "./Cards/ProductCard";
-import ProductMenu from "./Menus/ProductMenu";
-import Ratings from "./Ratings"
-import Carousel1 from "./Carousels/Carousel1";
-import ReactSlickSlider from "./Carousels/ReactSlickSlider";
-import RangeInput from "./Input/RangeInput";
-import Buttons from './Buttons'
+import ProductCard from "./UI/Cards/ProductCard";
+import ProductMenu from "./UI/Menus/ProductMenu";
+import Ratings from "./UI/Ratings"
+import Carousel1 from "./UI/Carousels/Carousel1";
+import ReactSlickSlider from "./UI/Carousels/ReactSlickSlider";
+import RangeInput from "./UI/Input/RangeInput";
+import Buttons from './UI/Buttons'
+import Sections from "./Sections";
 
 
 const components = {
     Buttons,
+    Sections,
     Sidebar,
     SearchBox,
     DropdownList,
-    PageName,
     TextIconButton,
     TextButton,
     InputImage,

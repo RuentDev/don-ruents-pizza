@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import useNavigations from '@/hooks/components/useNavigations'
 import navMenus from '../../data/navMenuFronPage.json'
-import Buttons from '../Buttons'
+import Buttons from '../UI/Buttons'
 
 const Navbar = () => {
 	const {

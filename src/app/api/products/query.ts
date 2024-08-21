@@ -1,5 +1,5 @@
-import client from "@/utils/shopify";
-import type { Product } from '@/utils/types';
+import client from "@/libs/shopify";
+import type { Product } from '@/libs/types';
 
 
 export async function getAllProducts(): Promise<Product[]> {

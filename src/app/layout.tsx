@@ -3,16 +3,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Oswald } from 'next/font/google'
 import { ReduxProvider } from '@/redux/provider'
-import FontAwesomeProvider from '../components/FontAwesomeProvider'
+import FontAwesomeProvider from '../components/UI/FontAwesomeProvider'
 import Components from '@/components'
-
-
-const oswald = Oswald({
-  subsets: ['latin'],
-  weight: '400',
-  preload: true,
-  adjustFontFallback: true,
-})
+import { oswald } from '@/libs/fonts'
 
 export const metadata: Metadata = {
   title: 'Don Ruents | Pizza',

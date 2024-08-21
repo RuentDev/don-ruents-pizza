@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import socialMedias from '../../data/socialMedias.json'
 import { IconName } from '@fortawesome/fontawesome-svg-core'
-import Icon from '../Icon'
+import Icon from '../UI/Icon'
 
 const Footer = () => {
 	return (

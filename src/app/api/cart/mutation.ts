@@ -1,4 +1,4 @@
-import client from "@/utils/shopify";
+import client from "@/libs/shopify";
 
 export async function createCart() {
   const cartQuery = `
