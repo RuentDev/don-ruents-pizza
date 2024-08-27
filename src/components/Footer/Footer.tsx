@@ -11,7 +11,14 @@ const Footer = () => {
 			<div className="inner-container w-full h-auto flex flex-col items-center justify-center py-5">
 				{/* LOGO */}
 				<div className="logo-cotnainer my-5 w-[50%] h-auto flex items-center justify-center overflow-hidden">
-					<Image className='w-auto h-auto' src='https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294' width={150} height={150} alt='logo' priority={true} />
+					<Image 
+						priority 
+						alt='logo' 
+						width={150} 
+						height={150} 
+						className='w-auto h-auto' 
+						src='https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294' 
+					/>
 				</div>
 				{/* ICONS CONTAINER */}
 				<div className="icon-cotnainer mt-5">

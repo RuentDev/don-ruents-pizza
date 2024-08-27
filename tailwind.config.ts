@@ -10,7 +10,6 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "logo": "url('https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294')",
         "reviewSectionImage": "url('https://cdn.shopify.com/s/files/1/0883/7867/1408/files/reviews-section-image.jpg?v=1724768299')",
         "banner1": "url('https://cdn.shopify.com/s/files/1/0883/7867/1408/files/category-1.jpg?v=1724767800')"
       },
