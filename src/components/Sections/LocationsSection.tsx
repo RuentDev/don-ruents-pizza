@@ -26,7 +26,6 @@ const LocationsSection: React.FunctionComponent<LocationsSectionProps> = (props)
                     width={500}
                     height={500}
                     priority
-
                   />
                 </div>
                 <h3 className='text-[2rem] mt-5 text-colorPrimary uppercase'>{location.name}</h3>

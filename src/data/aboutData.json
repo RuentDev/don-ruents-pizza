@@ -2,19 +2,19 @@
     {
         "id": "svg1",
         "label": "Original Recipe",
-        "iconPath": "/svg/pizza-svgrepo-com.svg",
+        "iconPath": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/pizza-svgrepo-com.svg",
         "subHeading": "Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae"
     },
     {
         "id": "svg2",
         "label": "Quality Ingredients",
-        "iconPath": "/svg/bowl-food-health-svgrepo-com.svg",
+        "iconPath": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/bowl-food-health-svgrepo-com.svg",
         "subHeading": "Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae"
     },
     {
         "id": "svg3",
         "label": "Fastest Services",
-        "iconPath": "/svg/scooter-svgrepo-com.svg",
+        "iconPath": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/scooter-svgrepo-com.svg",
         "subHeading": "Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor impedit felis magna dolor vitae"
     }
 ]

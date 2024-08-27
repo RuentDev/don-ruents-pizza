@@ -14,7 +14,14 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
             {aboutdata.map((item: any) => {
               return (
                 <li key={item.id} className='my-5 flex flex-col justify-center items-center text-center'>
-                  <Image src={item.iconPath} color='white' width={150} height={150} alt='test' />
+                  <Image 
+                    alt='test' 
+                    width={150} 
+                    height={150} 
+                    color='white' 
+                    src={item.iconPath} 
+                    priority
+                  />
                   <h2 className='text-primaryTextColor uppercase text-[1.5rem] md:text-[1.2rem] font-[500] -tracking-2'>{item.label}</h2>
                   <p className='text-secondaryTextColor mt-2'>{item.subHeading}</p>
                 </li>

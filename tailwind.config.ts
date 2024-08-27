@@ -9,6 +9,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "logo": "url('https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294')",
+        "reviewSectionImage": "url('https://cdn.shopify.com/s/files/1/0883/7867/1408/files/reviews-section-image.jpg?v=1724768299')",
+        "banner1": "url('https://cdn.shopify.com/s/files/1/0883/7867/1408/files/category-1.jpg?v=1724767800')"
+      },
+
       colors: {
         "backgroundWhite": "#FFFFFF",
         "colorPrimary": "#C10B00",
@@ -45,11 +51,7 @@ const config: Config = {
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
       },
-      backgroundImage: {
-        "logo": "url('logo-1.png')",
-        "reviewSectionImage": "url('/images/other/reviews-section-image.jpeg')",
-        "banner1": "url('/images/banners/category-1.jpg')"
-      },
+     
       letterSpacing: {
         '1': '0',
         '2': '0.025em',

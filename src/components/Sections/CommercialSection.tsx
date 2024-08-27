@@ -11,7 +11,7 @@ const  CommercialSection: React.FC<CommercialSectionProps> = () => {
             <div className="inner-container flex flex-col gap-7 sm:flex-row justify-center w-full h-auto p-10 md:p-20">
             <div className="image-container w-full h-auto flex items-center justify-center">
                 <div className="inner-container relative w-full h-auto sm:w-[15rem] sm:h-[15rem] md:w-[20rem] md:h-[20rem]">
-                <Image src={"/about-02-img.png"} className='w-auto h-auto' width={200} height={100} alt='about-image' priority />
+                <Image src="https://cdn.shopify.com/s/files/1/0883/7867/1408/files/about-02-img.png?v=1724746295" className='w-auto h-auto' width={200} height={100} alt='about-image' priority />
                 </div>
             </div >
             <div className="content-container block w-full h-auto">

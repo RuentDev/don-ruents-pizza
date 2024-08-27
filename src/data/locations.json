@@ -4,20 +4,20 @@
     "name": "downtown",
     "phone": "789-654-3210",
     "address": "8721 M Central Avenue, Los Angeles, CA 90036 Daily 11AM - 10PM",
-    "image": "/images/locations/location-1.jpg"
+    "image": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/location-1.jpg?v=1724767927"
   },
   {
     "id": 1,
     "name": "central city",
     "phone": "789-654-3210",
     "address": "148 D Central Avenue, Los Angeles, CA 90012 Daily 11AM - 10PM",
-    "image": "/images/locations/location-2.jpg"
+    "image": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/location-2.jpg?v=1724767927"
   },
   {
     "id": 2,
     "name": "southern city",
     "phone": "789-654-3210",
     "address": "678 W Hollywood Way, Burbank CA 91505 Daily 10AM - 10PM",
-    "image": "/images/locations/location-3.jpg"
+    "image": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/location-3.jpg?v=1724767927"
   }
 ]

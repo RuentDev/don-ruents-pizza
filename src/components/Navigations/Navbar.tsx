@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import useNavigations from '@/hooks/components/useNavigations'
-import navMenus from '../../data/navMenuFronPage.json'
+import navMenus from '@/data/navMenuFronPage.json'
 import Buttons from '../UI/Buttons'
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
 				{/* LOGO */}
 				<div className="logo-cotnainer w-[80%] md:w-[40%] lg:w-[60%] h-full">
 					<Link className='w-full h-full flex justify-center overflow-hidden' href="/">
-						<Image className='w-auto h-auto' src={'/logo-1.png'} width={100} height={100} alt='logo' priority />
+						<Image className='w-auto h-auto' src={'https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294'} width={100} height={100} alt='logo' priority />
 					</Link>
 				</div>
 				<div className="inner-container w-[20%] md:w-[10%] lg:w-[100%] h-auto">

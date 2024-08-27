@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import FeaturedCard from '../Cards/FeaturedCard'
-import featuredProducts from '../../../data/featuredProductData.json'
 import { Product } from '@/libs/types'
 
 
