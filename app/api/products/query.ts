@@ -1,6 +1,5 @@
 import client from "@/libs/shopify";
-import type { Product } from '@/libs/types';
-
+import type { Product } from "@/libs/types";
 
 export async function getAllProducts(): Promise<Product[]> {
   const productQuery = `{
@@ -51,14 +50,12 @@ export async function getAllProducts(): Promise<Product[]> {
     }
   }`;
 
+  const { data } = await client.request(productQuery);
 
-  const { data } = await client.request(productQuery)
-
-  return data.products.nodes
+  return data.products.nodes;
 }
 
 export async function getProductsByCollectionHandle(handle: string) {
-
   const productQuery = `
     query Collection($handle: String) {
       collection(handle: $handle) {
@@ -96,7 +93,5 @@ export async function getProductsByCollectionHandle(handle: string) {
     },
   });
 
-  return data.collection.products.nodes
-
-
+  return data.collection.products.nodes;
 }
