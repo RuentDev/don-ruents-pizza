@@ -51,6 +51,7 @@ const CartItem: React.FC<CartItemProps> = ({item, active, onClick, onDeleteClick
 							alt={item.merchandise.title}
 							src={item.merchandise.product.featuredImage.url}
 							className="rounded-full w-full h-full"
+							style={{ width: "auto", height: "auto" }}
 						/>
 					</div>
 					{/* DETAILS */}

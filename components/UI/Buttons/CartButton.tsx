@@ -97,6 +97,7 @@ const CartButton: FC<CartButtonProps> = ({ onClick }) => {
           height={100} 
           alt="cart delivery scooter" 
           className="h-full w-full object-contain filter drop-shadow-sm"
+          style={{ width: "auto", height: "auto" }}
           src="https://cdn.shopify.com/s/files/1/0883/7867/1408/files/motorcycle-delivery-single-box-svgrepo-com.svg" 
         />
       </div>

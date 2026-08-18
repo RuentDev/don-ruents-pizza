@@ -60,7 +60,7 @@ const Carousel1 = (props: Carousel1Props) => {
               <p className='text-center text-[1.5rem] md:text-[3rem]'>&#34;{slide.review}&#34;</p>
                 {/* ClIENT ICON */}
               <div className="client-icon-container h-[100px] w-[100px] rounded-full overflow-hidden my-5">
-                <Image priority src='/images/other/review-author-no-image.jpg' alt='user_testimony' width={100} height={100} />
+                <Image src='/images/other/review-author-no-image.jpg' alt='user_testimony' width={100} height={100} style={{ width: "auto", height: "auto" }} />
               </div>
 
               {/* CLIENT NAME */}

@@ -55,7 +55,6 @@ const CommercialSection: React.FC<CommercialSectionProps> = () => {
                 fill
                 sizes="(max-width: 640px) 280px, (max-width: 768px) 380px, 440px"
                 className="object-contain filter drop-shadow-[0_16px_32px_rgba(108,65,67,0.35)] group-hover:drop-shadow-[0_24px_48px_rgba(193,11,0,0.45)] transition-all duration-500"
-                priority
               />
             </div>
           </div>

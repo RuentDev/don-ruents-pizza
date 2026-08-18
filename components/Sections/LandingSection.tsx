@@ -124,6 +124,7 @@ const LandingSection: React.FC<LandingSectionProps> = () => {
       <div className="relative w-full h-auto z-10 -mb-1 pointer-events-none">
         <Image 
           className="w-full h-auto block" 
+          style={{ width: "100%", height: "auto" }}
           src="https://cdn.shopify.com/s/files/1/0883/7867/1408/files/white-overlay-wave.png?v=1724746294" 
           width={1500} 
           height={100} 

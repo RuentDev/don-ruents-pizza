@@ -12,11 +12,11 @@ const Footer = () => {
 				{/* LOGO */}
 				<div className="logo-cotnainer my-5 w-[50%] h-auto flex items-center justify-center overflow-hidden">
 					<Image 
-						priority 
 						alt='logo' 
 						width={150} 
 						height={150} 
 						className='w-auto h-auto' 
+						style={{ width: "auto", height: "auto" }}
 						src='https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294' 
 					/>
 				</div>

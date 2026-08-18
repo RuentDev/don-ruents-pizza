@@ -25,12 +25,11 @@ const LocationsSection: React.FunctionComponent<LocationsSectionProps> = (
             >
               <div className="image-container  w-full h-[25rem] md:h-[15rem] lg:h-[25rem] relative overflow-hidden rounded-md">
                 <Image
-                  className="absolute object-center object-cover w-auto h-auto hover:scale-[1.1] ease-in-out duration-1000"
+                  className="object-center object-cover hover:scale-110 ease-in-out duration-1000"
                   src={location.image}
                   alt={location.name}
-                  width={500}
-                  height={500}
-                  priority
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <h3 className="text-[2rem] mt-5 text-colorPrimary uppercase">

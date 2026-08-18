@@ -55,7 +55,7 @@ const AboutSection: React.FC<AboutSectionProps> = () => {
                       height={48}
                       src={item.iconPath}
                       className="w-12 h-12 object-contain filter drop-shadow-sm"
-                      priority
+                      style={{ width: "auto", height: "auto" }}
                     />
                   </div>
 

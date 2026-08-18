@@ -28,7 +28,13 @@ const ProductSidebar: React.FC<ProductSidebarProps> = ({products}) => {
           <li key={product.id} className='product mt-2 flex gap-3'>
             <div className="img-container h-[50px] w-[50px] overflow-hidden rounded-full">
               <Link href={`/products/${product.title}`}>
-                <Image src={product.featuredImage.url} alt={product.title} width={100} height={100}/>
+                <Image 
+                  src={product.featuredImage.url} 
+                  alt={product.title} 
+                  width={100} 
+                  height={100}
+                  style={{ width: "auto", height: "auto" }}
+                />
               </Link>
             </div>
             <div className="product-details-container">
@@ -59,11 +65,11 @@ const ProductSidebar: React.FC<ProductSidebarProps> = ({products}) => {
             <div className="svg-container w-8 h-8 overflow-hidden">
               <Image 
                 className='w-auto h-auto'
+                style={{ width: "auto", height: "auto" }}
                 src="/svg/mustache-svgrepo-com.svg" 
                 alt='mustache' 
                 width={100} 
                 height={100} 
-                priority
               />
             </div>
             <Link className='text-[1rem]' href={category.link}>{category.label.toUpperCase()}</Link>

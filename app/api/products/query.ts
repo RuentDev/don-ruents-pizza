@@ -65,6 +65,7 @@ export async function getProductsByCollectionHandle(handle: string) {
             id
             title
             handle
+            description
             priceRange {
               minVariantPrice {
                 amount
@@ -73,6 +74,16 @@ export async function getProductsByCollectionHandle(handle: string) {
             }
             featuredImage {
               url
+            }
+            variants(first: 1) {
+              nodes {
+                id
+                title
+                priceV2 {
+                  amount
+                  currencyCode
+                }
+              }
             }
             totalInventory
             availableForSale

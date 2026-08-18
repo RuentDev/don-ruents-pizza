@@ -41,7 +41,6 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-contain filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.15)] group-hover:drop-shadow-[0_12px_24px_rgba(193,11,0,0.25)] transition-all duration-500"
-                priority
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-secondaryTextColor text-sm">

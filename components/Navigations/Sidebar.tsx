@@ -10,7 +10,7 @@ const Sidebar = ({children}: {children: React.ReactNode}) => {
             <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
                {/* BRAND */}
                <Link href={"#"} className=''>
-                  <Image src="/idyours-brand.png" width={100} height={100} priority className="h-auto w-auto mx-2 mb-3" alt="ID-yours Logo"/>
+                  <Image src="/idyours-brand.png" width={100} height={100} style={{ width: "auto", height: "auto" }} className="h-auto w-auto mx-2 mb-3" alt="ID-yours Logo"/>
                </Link>
                {/* NAV LIST */}
                <ul className="space-y-2 font-medium">
