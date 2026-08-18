@@ -66,8 +66,8 @@ const FeaturedMenu: React.FC<FeaturedMenuProps> = ({ products }) => {
   }, []);
 
   return (
-    <div className="featured-menu w-full py-6">
-      <div className="max-w-7xl mx-auto px-6 md:px-0 py-6">
+    <div className="featured-menu w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-0">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-stretch justify-center">
           {products?.map((product, index) => (
             <li key={product.id || index} className="flex">

@@ -1,23 +1,26 @@
 [
     {
-        "id": 0,
-        "name": "John",
-        "review": "Napaka sarap balik-balikan, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias et natus iusto impedit vero.",
-        "ratings": 0.0,
-        "img": "/images/other/review-author-no-image.jpg"
-    },
-    {
         "id": 1,
-        "name": "Michael",
-        "review": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis reiciendis distinctio quam repellat autem, pariatur quia rerum architecto fugiat aperiam.!",
-        "ratings": 0.0,
-        "img": "/images/other/review-author-no-image.jpg"
+        "name": "John Doe",
+        "title": "Verified Pizza Lover",
+        "review": "Hands down the best wood-fired pizza in town! The crust is so light, airy, and crispy, and the mozzarella is unbelievably fresh. Don Ruent's is our go-to pizzeria every weekend!",
+        "ratings": 5.0,
+        "img": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294"
     },
     {
         "id": 2,
-        "name": " Mark",
-        "review": "Napaka mura at masarap, sulit na sulit, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias et natus iusto impedit vero.",
-        "ratings": 0.0,
-        "img": "/images/other/review-author-no-image.jpg"
+        "name": "Maria Santos",
+        "title": "Frequent Customer",
+        "review": "Super fast delivery! The heart-shaped pepperoni pizza arrived piping hot within 25 minutes. My whole family loved every single slice. 10/10 service!",
+        "ratings": 5.0,
+        "img": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294"
+    },
+    {
+        "id": 3,
+        "name": "Mark Reyes",
+        "title": "Food Critic & Regular",
+        "review": "Authentic Italian flavors at an unbeatable price. You can really taste the 72-hour fermented dough and imported San Marzano tomatoes. Absolute perfection!",
+        "ratings": 5.0,
+        "img": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/logo-1.png?v=1724746294"
     }
 ]

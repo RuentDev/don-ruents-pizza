@@ -11,7 +11,7 @@ const HomePage = async () => {
   const featuredProducts = await getProductsByCollectionHandle("featured");
 
   return (
-    <main className="h-auto w-full">
+    <main className="h-auto w-full space-y-5 md:space-y-10">
       {/* LANDING SECTION */}
       <Components.Sections.LandingSection />
       {/* ABOUT SECTION */}
