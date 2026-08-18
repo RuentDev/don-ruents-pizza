@@ -1,0 +1,20 @@
+[
+    {
+        "id": "svg1",
+        "label": "Original Neapolitan Recipe",
+        "iconPath": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/pizza-svgrepo-com.svg",
+        "subHeading": "Hand-kneaded 72-hour slow fermented dough baked at 900°F in our traditional wood-fired brick oven for the perfect airy crust."
+    },
+    {
+        "id": "svg2",
+        "label": "100% Fresh Ingredients",
+        "iconPath": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/bowl-food-health-svgrepo-com.svg",
+        "subHeading": "Imported Italian San Marzano tomatoes, fresh Mozzarella di Bufala, cold-pressed olive oil, and organic garden-picked basil."
+    },
+    {
+        "id": "svg3",
+        "label": "Express Hot Delivery",
+        "iconPath": "https://cdn.shopify.com/s/files/1/0883/7867/1408/files/scooter-svgrepo-com.svg",
+        "subHeading": "Dispatched in custom insulated thermal bags within minutes of baking to guarantee your pizza arrives piping hot and fresh."
+    }
+]

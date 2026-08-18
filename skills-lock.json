@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "shopify-admin": {
+      "source": "Shopify/shopify-ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/shopify-admin/SKILL.md",
+      "computedHash": "2697bb3315d9601adbf742c412b3218d6981d7b973e19da6f5a988e14e4699f6"
+    },
+    "shopify-dev": {
+      "source": "Shopify/shopify-ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/shopify-dev/SKILL.md",
+      "computedHash": "508aad2506530319a130915314ffc795c548fff1d0f43c50e127d37f01bc636b"
+    },
+    "shopify-payments-apps": {
+      "source": "Shopify/shopify-ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/shopify-payments-apps/SKILL.md",
+      "computedHash": "aa242c6d86c58e6e5d75184cf60b34e285bb97fa2c27ac7b32c8e8549eecf94c"
+    },
+    "shopify-shopifyql": {
+      "source": "Shopify/shopify-ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/shopify-shopifyql/SKILL.md",
+      "computedHash": "c18a9d0c46d4b27a1517d78d73e5063a89488e5656df0494c57147178b765a38"
+    },
+    "shopify-storefront-graphql": {
+      "source": "Shopify/shopify-ai-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/shopify-storefront-graphql/SKILL.md",
+      "computedHash": "22a22ed9e568f0053fabea2266841b1421515a491b789107f0ea9bdd49776403"
+    }
+  }
+}
