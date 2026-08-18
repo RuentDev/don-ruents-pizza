@@ -30,7 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(({
   }, [price])
 
   return (
-    <div className="group relative w-full bg-white dark:bg-slate-900/90 rounded-2xl border border-borderDark/60 dark:border-white/10 shadow-md hover:shadow-2xl hover:border-colorSecondary hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between overflow-hidden p-4 sm:p-5">
+    <div className="group relative w-full bg-backgroundWhite rounded-2xl border border-borderDark shadow-md hover:shadow-2xl hover:border-colorSecondary hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between overflow-hidden p-4 sm:p-5">
       
       {/* Top Tagline Pill */}
       <div className="flex items-center justify-between z-10 w-full mb-2">
@@ -39,8 +39,8 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(({
         </span>
       </div>
 
-      {/* Product Image Container with Smooth 1.1x Hover Scale */}
-      <div className="relative w-full h-[180px] sm:h-[200px] flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-b from-slate-50 to-amber-50/30 dark:from-slate-800/40 dark:to-slate-800/10 p-4">
+      {/* Product Image Container with Warm Pizza Red Tint & Hover Scale */}
+      <div className="relative w-full h-[180px] sm:h-[200px] flex items-center justify-center overflow-hidden rounded-xl bg-colorPrimary/5 border border-colorPrimary/10 p-4">
         <div className="relative w-full h-full transform group-hover:scale-110 transition-transform duration-500 ease-out">
           {imagePath ? (
             <Image
@@ -52,7 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(({
               priority
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-slate-300 text-sm">
+            <div className="w-full h-full flex items-center justify-center text-secondaryTextColor text-sm">
               No Image
             </div>
           )}
@@ -66,11 +66,11 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(({
 
       {/* Product Details & Content */}
       <div className="flex flex-col flex-grow items-center text-center mt-4 mb-5 px-1">
-        <h3 className="text-base sm:text-lg font-bold text-primaryTextColor dark:text-white uppercase tracking-wide group-hover:text-colorPrimary transition-colors duration-200 line-clamp-1">
+        <h3 className="text-base sm:text-lg font-bold text-primaryTextColor uppercase tracking-wide group-hover:text-colorPrimary transition-colors duration-200 line-clamp-1">
           {name}
         </h3>
         
-        <p className="text-xs text-secondaryTextColor dark:text-slate-400 mt-1.5 line-clamp-2 min-h-[32px]">
+        <p className="text-xs text-secondaryTextColor mt-1.5 line-clamp-2 min-h-[32px]">
           {description || "Made with fresh hand-kneaded dough, authentic tomato sauce, and mozzarella."}
         </p>
       </div>

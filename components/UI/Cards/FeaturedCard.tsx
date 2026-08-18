@@ -37,14 +37,14 @@ const FeaturedCard: React.FC<FeaturedCardProps> = React.memo(({
     onClick()
   }
 
-  // Format currency amount cleanly
+  // Format currency amount cleanly with PHP (₱) symbol
   const formattedPrice = React.useMemo(() => {
     const num = parseFloat(price.amount)
-    return isNaN(num) ? `${price.amount} ${price.currencyCode}` : `$${num.toFixed(2)}`
-  }, [price.amount, price.currencyCode])
+    return isNaN(num) ? `₱${price.amount}` : `₱${num.toFixed(2)}`
+  }, [price.amount])
 
   return (
-    <div className="group relative w-full bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-100 dark:border-white/10 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between overflow-hidden p-4 sm:p-5">
+    <div className="group relative w-full bg-backgroundWhite rounded-2xl border border-borderDark shadow-md hover:shadow-2xl hover:border-colorSecondary hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between overflow-hidden p-4 sm:p-5">
       
       {/* Top Floating Action Bar: Like Heart Button */}
       <div className="flex items-center justify-between z-10 w-full mb-2">
@@ -64,8 +64,8 @@ const FeaturedCard: React.FC<FeaturedCardProps> = React.memo(({
         </button>
       </div>
 
-      {/* Product Image Container with Smooth Hover Scale */}
-      <div className="relative w-full h-[180px] sm:h-[200px] flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-b from-slate-50 to-amber-50/30 dark:from-slate-800/40 dark:to-slate-800/10 p-4">
+      {/* Product Image Container with Warm Pizza Red Tint & Hover Scale */}
+      <div className="relative w-full h-[180px] sm:h-[200px] flex items-center justify-center overflow-hidden rounded-xl bg-colorPrimary/5 border border-colorPrimary/10 p-4">
         <div className="relative w-full h-full transform group-hover:scale-110 transition-transform duration-500 ease-out">
           {image ? (
             <Image 
@@ -76,25 +76,25 @@ const FeaturedCard: React.FC<FeaturedCardProps> = React.memo(({
               className="object-contain filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.15)] group-hover:drop-shadow-[0_12px_24px_rgba(193,11,0,0.25)] transition-all duration-500" 
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-slate-300 text-sm">
+            <div className="w-full h-full flex items-center justify-center text-secondaryTextColor text-sm">
               No Image
             </div>
           )}
         </div>
 
-        {/* Floating Price Pill */}
-        <div className="absolute bottom-3 left-3 bg-colorPrimary text-white font-extrabold text-xs sm:text-sm px-3.5 py-1.5 rounded-full shadow-lg border border-white/20">
+        {/* Floating Gold Price Pill with PHP (₱) Currency */}
+        <div className="absolute bottom-3 left-3 bg-colorSecondary text-primaryTextColor font-black text-xs sm:text-sm px-3.5 py-1.5 rounded-full shadow-lg border border-white/40">
           {formattedPrice}
         </div>
       </div>
 
       {/* Product Details & Content */}
       <div className="flex flex-col flex-grow items-center text-center mt-4 mb-5 px-1">
-        <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white uppercase tracking-wide group-hover:text-colorPrimary transition-colors duration-200 line-clamp-1">
+        <h3 className="text-base sm:text-lg font-bold text-primaryTextColor uppercase tracking-wide group-hover:text-colorPrimary transition-colors duration-200 line-clamp-1">
           {title}
         </h3>
         
-        <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 line-clamp-2 min-h-[32px]">
+        <p className="text-xs text-secondaryTextColor mt-1.5 line-clamp-2 min-h-[32px]">
           {description || "Hand-crafted pizza made with fresh premium ingredients & authentic family recipe."}
         </p>
 
